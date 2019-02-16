@@ -1,0 +1,77 @@
+/* pages/my/Recharge/Recharge.wxss */
+.header{
+  width:695rpx;
+  margin:40rpx auto 0;
+  border-bottom: 1rpx solid #e6e6e6;
+  color: #afafaf;
+  font-size: 28rpx;
+}
+.Hmoney{
+  margin: 30rpx 0 24rpx;
+  font-size: 48rpx;
+  font-weight: 600;
+  color: #010101;
+}
+.center{
+  width:695rpx;
+  margin:50rpx auto 200rpx;
+}
+.Ctit{
+  color:#070707;
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 50rpx;
+}
+.Clist{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sm-list{
+  width:210rpx;
+  height: 132rpx;
+  text-align: center;
+  border: 2rpx solid #f77a06;
+  font-size: 22rpx;
+  color: #f87a02;
+  border-radius:10rpx; 
+  margin-bottom: 20rpx;
+}
+.sm-list.on{
+  color: #fff;
+  background: #f87a02;
+}
+.lmoney{
+  margin: 33rpx 0 8rpx;
+  font-size: 33rpx;
+  font-weight: 600;
+}
+.explain{
+  margin-top: 33rpx;
+  color: #696969;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+checkbox{
+  zoom:70%;
+  margin-right: 20rpx;
+  vertical-align: top;
+  margin-top: -3rpx;
+}
+.F-top{
+  text-align: center;
+  color: #4e4e4e;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+.footer .btn{
+  width: 550rpx;
+  margin: 40rpx auto 0;
+  height: 80rpx;
+   background: #f47c01;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 29rpx;
+  border-radius:40rpx; 
+}

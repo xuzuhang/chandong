@@ -1,0 +1,18 @@
+page{
+  width: 100%;
+}
+.title{
+  text-align: center;
+  font-size: 34rpx;
+  color: #000;
+  line-height: 60rpx;
+  font-weight: bold;
+}
+text{
+  display: block;
+  width: 100%;
+  color: #000;
+  font-size: 28rpx;
+  padding:0 20rpx;
+  box-sizing: border-box;
+}

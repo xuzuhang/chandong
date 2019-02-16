@@ -1,0 +1,31 @@
+<!--pages/login7/login7.wxml-->
+<view class='container'>
+    <view class='center'>
+        <view class='main'>
+            <view class='title'>你对什么感兴趣?</view>
+            <view class='project'>
+                <view class='tit'>项目喜好</view>
+                <view class='info'>
+                    <block wx:key="{{index}}" wx:for='{{classArray}}'>
+                        <view  class="tab {{item.state==1?'on':''}}" bindtap='classchoose' data-i='{{index}}' >{{item.name}}</view>
+                    </block>
+                </view>
+            </view>
+            <view class='course'>
+                <view class='tit'>课程喜好</view>
+                <view class='info'>
+                      <block wx:key="{{index}}" wx:for='{{courseArray}}'>
+                        <view  class="tab {{item.state==1?'on':''}}" bindtap='coursechoose' data-i='{{index}}' >{{item.name}}</view>
+                    </block>
+                </view>
+            </view>
+            <view class='congratu'>
+                恭喜您迈出健身的第一步  赶快行动起来吧~
+            </view>
+        </view>
+    </view>
+</view>
+<view class='btn'>
+          <button plain='true' style='color:#f79733;border-color:#f79733;' bindtap='last'>上一步</button>
+          <button style='color:#fff;background:#f79733;' bindtap='next'>完成</button>
+</view>

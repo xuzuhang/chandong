@@ -1,0 +1,98 @@
+/* pages/login2/login2.wxss */
+page{
+  background:#fff;
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.center{
+  padding:140rpx 0 0;
+  width: 650rpx;
+  margin:166rpx  auto 0;
+  border-radius:8rpx; 
+  overflow: scroll; 
+  height: 70%;
+}
+.center::-webkit-scrollbar{
+  display:none
+  }
+.container{
+  position: relative;
+}
+image{
+  width: 180rpx;
+  height: 180rpx;
+  border:4rpx solid #ffc864;
+  border-radius:50%; 
+  position: absolute;
+  top: -92rpx;
+  left: 283rpx;  
+}
+.main{
+  margin-top: 140rpx;
+  width: 550rpx;
+  margin: 0 auto;
+  padding-bottom: 70rpx;
+}
+.main .title{
+  font-size: 42rpx;
+  font-weight: 550;
+  margin-bottom: 12rpx;
+}
+.main .title text{
+  font-size: 26rpx;
+  color: #999999;
+}
+.main .info{
+  margin-top: 60rpx;
+}
+.top{
+  font-size: 25rpx;
+}
+.top text{
+  color: #e79b09;
+}
+.salary picker{
+  margin-top: 20rpx;
+  color: #e79b09;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 33rpx;
+  padding-bottom: 8rpx;
+}
+.bottom input{
+  margin-top: 20rpx;
+  color: #e79b09;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 33rpx;
+  padding-bottom: 8rpx;
+}
+.spb{
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  color: #999;
+}
+.map{
+  margin-top: 20rpx;
+  color: #e79b09;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 33rpx;
+  padding-bottom: 8rpx;
+  height: 1.4rem;
+}
+.next{
+     border-radius:40rpx; 
+    position:fixed;
+    bottom:60rpx;
+    left:100rpx;
+    width: 550rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    background:#f47c01;
+    color:#fff;
+}

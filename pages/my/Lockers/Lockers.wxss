@@ -1,0 +1,107 @@
+/* pages/my/Lockers/Lockers.wxss */
+.Sheader{
+  margin: 380rpx 0 260rpx;
+  text-align: center;
+  color: #000;
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.Sheader>view{
+  font-size: 34rpx;
+  font-weight: normal;
+}
+.Sbtn{
+  width: 492rpx;
+  height: 136rpx;
+  background: #f57a00;
+  margin: 0 auto 76rpx;
+  border-bottom-left-radius: 68rpx;
+  border-top-left-radius: 68rpx;
+  border-bottom-right-radius: 68rpx;
+  border-top-right-radius: 68rpx;
+  color: #fff;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 136rpx;
+}
+.Cfot{
+  font-size: 23rpx;
+  text-align: center;
+  color: #999;
+}
+.Iheader{
+  margin: 241rpx 0 98rpx;
+  text-align: center;
+  color: #999;
+  font-size: 25rpx;
+}
+.Iheader>view{
+  font-weight: 600;
+  color: #000;
+  font-size: 46rpx;
+  margin-top: 10rpx;
+}
+.Icenter{
+  text-align: center;
+  margin-bottom: 193rpx;
+  font-size: 30rpx;
+  color: #000;
+}
+.Icenter>view{
+  font-weight: 600;
+  font-size: 34rpx;
+  margin-top: 10rpx;
+}
+.btn-group{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 75rpx;
+}
+.btn-group>view{
+  width: 270rpx;
+  height: 140rpx;
+  background: #f57a00;
+  border-bottom-left-radius: 70rpx;
+  border-top-left-radius: 70rpx;
+  border-bottom-right-radius: 70rpx;
+  border-top-right-radius: 70rpx;
+  border:1rpx solid #f57a00;
+  color: #fff;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 140rpx;
+}
+.btn-group .Retire{
+  background: #fff;
+  color: #f57a00;
+}
+.Eheader{
+  margin: 238rpx 0 140rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #000;
+  font-weight: 600;
+}
+.Eheader>view{
+  font-weight: normal;
+  font-size: 33rpx;
+  margin-top: 10rpx;
+}
+.Ecenter{
+  margin-bottom: 173rpx;
+  text-align: center;
+  font-size: 33rpx;
+  font-weight: 600;
+  color: #000;
+}
+.Ecenter>view{
+  color: #999;
+  font-size: 22rpx;
+  margin-top: 15rpx;
+  font-weight: normal;
+}
+.end .Sbtn{
+  color:#f57a00;
+  border: 1rpx #f57a00 solid;
+  background: #fff;
+}

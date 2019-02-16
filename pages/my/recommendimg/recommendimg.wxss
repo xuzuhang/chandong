@@ -1,0 +1,7 @@
+/* pages/my/recommendimg/recommendimg.wxss */
+image{
+  display:block;
+  width:600rpx;
+  height:600rpx;
+  margin:200rpx auto 0;
+}

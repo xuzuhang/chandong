@@ -1,0 +1,13 @@
+/* pages/common/news/news.wxss */
+@import '../../../utils/wxParse/wxParse.wxss';
+.wxParse-div{
+  font-size: 40rpx;
+  color: red;
+  text-indent: 2em;
+}  
+.wxParse-img{
+  width:100%!important;
+  height: 200rpx!important;
+  display: block;
+  margin: 0 auto;
+} 

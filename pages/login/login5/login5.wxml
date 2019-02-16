@@ -1,0 +1,22 @@
+<!--pages/login4/login4.wxml-->
+<view class='container'>
+    <view class='center'>
+        <view class='main'>
+            <view class='title'>你的体型最接近于?</view>
+        </view>
+        <view class='img'>
+            <block wx:for='{{imgs}}'  wx:key='{{index}}'>
+            <view bindtap='changeimg' bindtap='changeimg' data-img='{{index}}'>
+                  <image src='{{item.img}}'  style='display:{{item.statei}}'></image>
+                  <image src='{{item.chose}}'  style='display:{{item.statec}}'></image>
+                  <!-- <image src='{{item.img}}'  wx:if="{{item.state==0}}"></image>
+                  <image src='{{item.chose}}'  wx:else></image> -->
+            </view>
+            </block>
+        </view>
+    </view>
+</view>
+<view class='btn'>
+          <button plain='true' style='color:#f79733;border-color:#f79733;' bindtap='last'>上一步</button>
+          <button style='color:#fff;background:#f79733;' bindtap='next'>下一步</button>
+</view>

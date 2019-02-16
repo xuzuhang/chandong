@@ -1,0 +1,37 @@
+<!--pages/my/Processing/Processing.wxml-->
+<view wx:if="{{listArray.length>0}}">
+      <!-- <view class='about'>
+            <view class='a-left'>
+                  关于小程序
+                  <view class='time' style='margin-top:10rpx;font-size:23rpx;color:#aaa;font-weight:normal;'>2018/12/28 14:56:58</view>
+            </view>
+            <view class='a-right' style='color:#0ab614;'>
+                  已解决
+            </view>
+      </view>
+      <view class='about'>
+            <view class='a-left'>
+                  关于小程序
+                  <view class='time' style='margin-top:10rpx;font-size:23rpx;color:#aaa;font-weight:normal;'>2018/12/28 14:56:58</view>
+            </view>
+            <view class='a-right' style='color:#ffd000;'>
+                  处理中
+            </view>
+      </view> -->
+      <block wx:for="{{listArray}}" wx:key="{{index}}">
+        <view class='about'>
+              <view class='a-left'>
+                    关于{{item.type}}
+                    <view class='time' style='margin-top:10rpx;font-size:23rpx;color:#aaa;font-weight:normal;'>{{item.createTime}}</view>
+              </view>
+              <view class='a-right' style='color:#b0b0b0;'>
+                    未响应
+              </view>
+        </view>
+      </block>
+</view>
+<view wx:else class='no'>
+      <image src='../myimg/mylogos.png'></image>
+      <view>暂时没有在处理的反馈信息</view>
+      <view>我们会加油不断完善自己</view>
+</view>

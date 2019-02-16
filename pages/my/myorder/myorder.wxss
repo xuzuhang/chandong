@@ -1,0 +1,124 @@
+/* pages/my/myorder/myorder.wxss */
+/* pages/my/orderDetails/orderDetails.wxss */
+page{
+  background:#f0f0f0;
+}
+.header{
+  background: #fff;
+  color: #666;
+  font-weight: 600;
+}
+.Htitle{
+  width: 695rpx;
+  margin: 0 auto;
+  height: 73rpx;
+  line-height: 73rpx;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 28rpx;
+  border-bottom: 0.5rpx solid #e6e6e6;
+}
+.Htitle>view{
+  width: 33.33%;
+}
+.Htitle>view.on{
+  border-bottom:4rpx solid #000;
+  color: #000;
+}
+.m-topay, .m-repay{
+  background:#fff;
+  margin-bottom: 30rpx;
+}
+.m-topay>view,.m-repay>view{
+  width: 695rpx;
+  margin: 0 auto;
+}
+.top{
+    height:57rpx;
+    line-height: 57rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22rpx;
+}
+.middle{
+  display: flex;
+  justify-content: space-between;
+   border-bottom: 0.5rpx solid #e6e6e6;
+   padding-bottom: 22rpx;
+   font-size: 22rpx;
+   color:#999; 
+}
+.middle image{
+  width:150rpx;
+  height:124rpx;
+}
+.m-title{
+  width: 400rpx;
+  margin-top: 10rpx;
+}
+.m-title view:nth-of-type(1){
+  color: #404040;
+  font-size: 27rpx;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+.m-right{
+   margin-top: 10rpx;
+}
+.m-right view:nth-of-type(1){
+  color: #404040;
+}
+.m-right view:nth-of-type(2){
+  text-align: right;
+  margin-top: 60rpx;
+}
+.num{
+  height: 80rpx;
+  border-bottom: 0.5rpx solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  color: #000;
+  line-height: 80rpx;
+}
+.num view:nth-of-type(1){
+  color: #999;
+}
+.num view:nth-of-type(2) text{
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.bottom{
+  height:80rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height: 80rpx;
+}
+.detele{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #b2b2b2;
+}
+.payment,.payover{
+  width: 172rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  background: #f57a00;
+  border-radius:25rpx; 
+  margin-top:12rpx;
+}
+.payover{
+  color: #999;
+  background: #fff;
+  border: 1rpx solid #999;
+}
+.Prompt{
+  text-align: center;
+  color: #000;
+  height: 1000rpx;
+  line-height:1000rpx;
+}

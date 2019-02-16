@@ -1,0 +1,25 @@
+/* pages/my/Processing/Processing.wxss */
+.about{
+  width: 695rpx;
+  display: flex;
+  margin: 0 auto;
+  padding: 34rpx 0 27rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  justify-content: space-between;
+  font-size: 33rpx;
+  font-weight: 600;
+}
+.a-right{
+  margin-top: 20rpx;
+}
+.no{
+  text-align: center;
+  line-height: 32rpx;
+  font-size: 23rpx;
+  color: #c2c2c2;
+}
+.no image{
+  width: 240rpx;
+  height: 242rpx;
+  margin: 158rpx 0 20rpx;
+}

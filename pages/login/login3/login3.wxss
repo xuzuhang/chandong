@@ -1,0 +1,90 @@
+/* pages/login3/login3.wxss */
+page{
+  color: #35354d;
+}
+.center{
+  padding-top: 32rpx;
+  width: 650rpx;
+  margin:85rpx  auto 0;
+  border-radius:8rpx; 
+  padding-bottom: 20rpx;
+}
+.sex{
+  display: flex;
+  justify-content: space-around;
+}
+.sex>view{
+  width: 120rpx;
+  height: 191rpx;
+  position: relative;
+}
+.sex image{
+  width: 120rpx;
+  height: 191rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main{
+  margin-top: 140rpx;
+  width: 550rpx;
+  margin: 0 auto;
+  padding-bottom: 70rpx;
+}
+.main .title{
+  font-size: 42rpx;
+  font-weight: 550;
+  margin-bottom: 12rpx;
+  text-align: center;
+  font-weight: 600;
+}
+.main .xtitle{
+  margin: 20rpx 0 40rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: #999999;
+}
+.bottom picker{
+  margin-top: 20rpx;
+  color: #e79b09;
+  border-bottom: 1rpx solid #cccccc;
+  font-size: 33rpx;
+  padding-bottom: 8rpx;
+  text-align: center;
+}
+.date{
+  margin: 100rpx 0 0;
+}
+.date .tit{
+  font-size: 37rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.date .xtit{
+  margin: 20rpx auto 95rpx;
+  width: 385rpx;
+  font-size: 25rpx;
+  color: #999999;
+  text-align: center;
+}
+.weight input{
+  margin-top: 20rpx;
+  color: #e79b09;
+  border-bottom: 1rpx solid #fff;
+  font-size: 33rpx;
+  padding-bottom: 8rpx;
+}
+.btn{
+  margin-top:35rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.btn button{
+  width: 278rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  border-bottom-left-radius: 39rpx;
+  border-bottom-right-radius: 39rpx;
+  border-top-left-radius: 39rpx;
+  border-top-right-radius: 39rpx;
+}

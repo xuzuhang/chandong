@@ -1,0 +1,79 @@
+<!--pages/my/certficates/certficates.wxml-->
+<view class='header w695'>
+  注:应国家公安要求，凡提供线下实体服务的互联网注册会员需要实名并持有效证件备档认证
+</view>
+<view class='center w695'>
+    <view class='title'>证件类型</view>
+    <view class='ctit'>
+        <view class='{{index==1?"on":""}}' bindtap='tab' data-index='1'>
+              <view>中华人民共和国居民身份证</view>
+              <view style='font-size:20rpx;font-weight:normal;margin-top:8rpx;'>China resident identity card</view>
+        </view>
+        <view class='{{index==2?"on":""}}' bindtap='tab' data-index='2'>
+              <view>其他主权国家的有效护照</view>
+              <view style='font-size:20rpx;font-weight:normal;margin-top:8rpx;'>Asspots of others overeign states</view>
+        </view>
+    </view>
+    <view class='stit'>
+          <view>{{stit}}</view>
+          <view style='font-size:22rpx;color:#afafaf;font-weight:normal;padding-top:20rpx;'>自动识别</view>
+    </view>
+    <view class='photo'>
+          <view wx:if='{{index==1}}' class='id-card'>
+                <view bindtap='FacadeID'>
+                      <block wx:if='{{!facadeid}}'>
+                          <image src='../myimg/photo.png'></image>
+                          <view>上传身份证信息面 (正面)</view>
+                      </block>
+                      <image wx:else src='{{facadeid}}' style='width:100%;height:100%;margin:0;border-radius:20rpx;'></image>
+                </view>
+                <view bindtap='IdentityId'>
+                      <block wx:if='{{!identityid}}'>
+                          <image src='../myimg/photo.png'></image>
+                      <view>上传身份证信息面 (反面)</view>
+                      </block>
+                      <image wx:else src='{{identityid}}' style='width:100%;height:100%;margin:0;border-radius:20rpx;'></image>
+                </view>
+          </view>
+          <view wx:else class='passport'>
+                <view class='pass-top' bindtap='Cpassport'>
+                      <block wx:if='{{!passportImg}}'>
+                          <image src='../myimg/photo.png'></image>
+                          <view>Please take a photo and upload your passport information page</view>
+                      </block>
+                      <image wx:else src='{{passportImg}}' style='width:100%;height:100%;margin:0;border-radius:20rpx;'></image>
+                </view>
+                <view class='pass-middle'>
+                      <view class='pass-tit'>真实姓名</view>
+                      <input bindblur='passname'></input>
+                </view>
+                <view class='pass-bottom'>
+                      <view class='pass-tit'>护照身份识别号</view>
+                      <input type='number' bindblur='passid'></input>
+                </view>
+          </view>
+    </view>
+
+    <view class='Agreement'>
+          <view class='ag-tit'>会员注册协议</view>
+          <scroll-view class="scroll-view" scroll-y  bindscroll='scroll'>
+              <text>{{text}}</text>
+          </scroll-view>
+          <view class='autograph'>
+              协议签署人签名：
+              <view bindtap='toautoraph' wx:if='{{!autograImg}}'>
+                    <image src='../myimg/sign.png'></image> <text>点此处签名</text>
+              </view>
+              <view bindtap='toautoraph' wx:else>
+                    <image style='width:100%;height:100%;' src='{{autograImg}}'></image>
+              </view>
+              签署日期： {{time}}
+          </view>
+    </view>
+</view>
+<view class='footer'>
+      <view class='price'><text style='font-size:23rpx;'>总价</text> ￥ {{price}}
+        <view style='font-size:22rpx;color:#9b9b9b;'>滚动至协议末尾，签署协议确认购买</view>
+      </view>
+      <view class='sure' bindtap='sure'>确认购买</view>
+</view>

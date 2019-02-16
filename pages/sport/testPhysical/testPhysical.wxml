@@ -1,0 +1,62 @@
+<!--pages/sport/testPhysical/testPhysical.wxml-->
+<view class='header'>
+      <view class='Htit'>
+            {{BMI.thisweek.text}}
+            <image wx:if='{{BMI.lastweek.value<BMI.thisweek.value}}' class='up' src='../sportimg/up.png'></image>
+            <image wx:elif='{{BMI.lastweek.value>BMI.thisweek.value}}' class='down' src='../sportimg/down.png'></image>
+      </view>
+      本周平均BMI {{BMI.thisweek.text}} <text style='margin:0 20rpx;'>|</text> 上周平均BMI {{BMI.lastweek.text}}
+</view>
+<view class='center'>
+        <view class='sptimes'>
+                   <picker bindchange="bindPickerChange" value="{{pici}}" range="{{sptimeArray}}">
+                      {{sptimeArray[pici]}}  ▼
+                    </picker>
+                    <view class='week'>
+                        <block wx:for="{{weekArray}}" wx:key="{{index}}">
+                              <view class='weekList {{day==index && pici==0?"on":""}}'>
+                                    <view class='progr'><view style='height:{{item.pro}};'></view></view>
+                                    {{item.day}}
+                                    <view style='color:#9a9a9a;font-size:20rpx;'>{{item.date}}</view>
+                              </view>
+                          </block>
+                    </view>
+            </view>
+    <view class='Prompt' wx:if="{{ListArray.length==0}}">
+            还没有数据呢~~
+      </view>
+    <scroll-view scroll-y='true'  bindscrolltolower="scrolls" style="height:670rpx;" wx:else>
+      <block wx:for="{{ListArray}}" wx:key="{{index}}">
+        <view class='Clist' bindtap='toresult' data-ind='{{index}}'>
+              <view class='CL-top'>
+                  <view class='time'>
+                        {{item.year}}年{{item.mouth}}月{{item.day}}日
+                  </view>
+                  <view class='main'>
+                        详细信息 >
+                  </view>
+              </view>
+              <view class='CL-bot'>
+                  <view>
+                        体重
+                        <view class='Cl-num'>{{item.weight}}</view>
+                        Kg
+                  </view>
+                  <view>
+                        BMI
+                        <view class='Cl-num'>{{item.bmi}}</view>
+                        偏瘦
+                  </view>
+                  <view>
+                        体脂率
+                        <view class='Cl-num'>{{item.bodyfatPercentage}}%</view>
+                        偏低
+                  </view>
+              </view>
+        </view>
+       </block>
+  </scroll-view>
+</view>
+ <view class='footer'>
+      <view class='btn' bindtap='tobodyHeath'>开始测量</view>
+</view> 

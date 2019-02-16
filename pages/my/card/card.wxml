@@ -1,0 +1,25 @@
+<!--pages/my/card/card.wxml-->
+<view class='wrapper'>
+      <view class='header'>
+            <view class='on'>全部</view>
+            <!-- <view>预售会员</view>
+            <view>会员续费</view> -->
+            <image bindtap='toindex'  src='../myimg/house.png'></image>
+      </view>
+      <view class='center'>
+          <view class='fitness'>
+            <block wx:for='{{cardArray}}' wx:key='{{index}}'>
+                <view class='fit-list' bindtap='cardDetails' data-id='{{item.id}}'>
+<image wx:if="{{upgrade && item.id==3}}" src="https://static-1257000451.cos.ap-shanghai.myqcloud.com/cards/card1upgrade.png"></image>
+                      <image wx:else src='{{item.coverUrl}}'></image>
+                      <view class='fit-left'>
+                            <view class='tit'>{{item.title}}</view>
+                            <view>可在全世界所有蝉动门店使用</view>
+                            <view class='time'>365天x24小时</view>
+                            <view class='money'>￥ {{item.price}}</view>
+                      </view>
+                </view>
+              </block>
+          </view>
+      </view>
+</view>

@@ -1,0 +1,79 @@
+/* pages/login1/login1.wxss */
+page{
+  background: #fff;
+   width: 100%;
+   height: 100%;
+}
+.container{
+  width: 100%;
+}
+.img{
+  margin-top:91rpx; 
+  width: 100%;
+  text-align: center;
+}
+.img image{
+  width: 193rpx;
+  height: 208rpx;
+}
+.main{
+  width: 73%;
+  margin: 96rpx auto 0; 
+}
+.main .title{
+  font-size: 38rpx;
+  color: #36374c;
+  font-weight: 700;
+  text-align: center;
+}
+.phone{
+  padding:70rpx 0 30rpx; 
+  text-align: center;
+  font-size: 28rpx;
+  color:#ea9c08;
+  border-bottom:1rpx #cccccc solid;
+  margin-bottom: 32rpx;
+}
+.code{
+  overflow: hidden;
+  margin-bottom: 98rpx;
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+}
+.code input{
+  font-size: 32rpx;
+  color: #36374c; 
+  float: left;
+  width: 70%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.code button::after{
+   border: none;
+}
+.code button{
+  float: right;
+  /* width: 200rpx; */
+  height: 100rpx;
+  line-height: 100rpx;
+  flex:1;
+}
+.main .next{
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #f57b00;
+    color: #fff;
+    border-radius:40rpx; 
+}
+.bottom{
+  color: #35364b;
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 250rpx;
+}
+.bottom navigator{
+  display: inline-block;
+  text-decoration: underline;
+  font-size:28rpx;
+}

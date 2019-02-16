@@ -1,0 +1,193 @@
+/* pages/sport/Result/Result.wxss */
+.header{
+  width: 750rpx;
+  height: 546rpx;
+  overflow: hidden;
+}
+.w695{
+  width: 695rpx;
+  margin: 0 auto;
+}
+.Htop-left{
+  display: flex;
+  justify-content: space-between;
+  margin: 28rpx 0 30rpx;
+}
+.img{
+  width:102rpx;
+  height: 102rpx;
+  background: #fff;
+  border-radius:50%; 
+}
+.img image{
+  width:102rpx;
+  height: 102rpx;
+  background: #fff;
+  border-radius:50%; 
+}
+.Linfo{
+  font-size: 26rpx;
+  color:#fff;
+  width: 374rpx;
+}
+.modify{
+  /* color: #fff;
+  font-size: 20rpx; */
+  width: 124rpx;
+  height: 36rpx;
+  /* line-height: 36rpx;
+  text-align: center;
+   border-bottom-left-radius: 18rpx;
+  border-bottom-right-radius: 18rpx;
+  border-top-left-radius: 18rpx;
+  border-top-right-radius: 18rpx; 
+  margin-top: 15rpx;
+   border: 1rpx solid #fff;  */
+}
+.Hbot{
+  width: 654rpx;
+  height: 384rpx;
+  box-shadow: 5rpx 5rpx 28rpx #f7f4f2;
+  border: 1rpx solid #f7f4f2;
+  background: #fff;
+  border-radius:25rpx; 
+}
+.icon{
+  width: 109rpx;
+  height: 34rpx;
+  border-bottom-left-radius: 17rpx;
+  border-top-left-radius:17rpx; 
+  position: relative;
+  font-size:20rpx;
+  text-align: center;
+  line-height: 34rpx;
+}
+.iconAngle{
+  width:0;
+  height:0;
+  border-top:17rpx solid transparent;
+  border-bottom:17rpx solid transparent;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+.iconAnglew{
+  border-right:20rpx solid #fff;
+  z-index: 99;
+   right: -1rpx; 
+}
+.Htit{
+  width: 593rpx;
+  margin: 26rpx auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.Htit .value{
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #000;
+}
+.center .circular{
+  width: 654rpx;
+  height: 384rpx;
+  box-shadow: 5rpx 5rpx 28rpx #f7f4f2;
+  border: 1rpx solid #f7f4f2;
+  background: #fff;
+  border-radius:25rpx; 
+  margin: 25rpx auto 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.Citit{
+    margin: 27rpx 0 10rpx;
+    font-weight: 600;
+    font-size: 35rpx;
+    color: #000;
+}
+.Cixtit{
+  margin-bottom: 30rpx;
+  color: #b3b3b3;
+  font-size: 22rpx;
+}
+.circular .icon{
+  margin-left: 25rpx;
+}
+.circular canvas{
+  margin-top: 25rpx;
+}
+.block{
+  width: 654rpx;
+  box-shadow: 5rpx 5rpx 28rpx #f7f4f2;
+  border: 1rpx solid #f7f4f2;
+  background: #fff;
+  border-radius:25rpx; 
+  margin: 25rpx auto 17rpx;
+  text-align: center;
+}
+.block-list{
+ height: 210rpx;
+ border-bottom: 0.5rpx solid #e6e6e6;
+  width: 604rpx;
+  margin: 0 auto;
+}
+.Btop{
+  display: flex;
+  justify-content: space-between;
+  margin: 23rpx auto 35rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #404040;
+}
+.Bmid{
+  display:flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 28rpx;
+}
+.Bmid>view{
+  flex: 1;
+  text-align: center;
+  margin: 5rpx;
+}
+.Bbot{
+  position: relative;
+}
+.Bbot .progress{
+  height:20rpx;
+   border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  background: #e6e6e6;
+}
+.Bbot .progress>view{
+  height:20rpx;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  background: #fd8d0c;
+  transition: all 0.8s linear;
+}
+.Bbot .ff{
+  color: #999;
+  font-size: 18rpx;
+  position: absolute;
+  top: 0;
+  left: 33.3%;
+}
+.Bbot .ff>view:nth-of-type(1){
+  width: 5rpx;
+  height: 20rpx;
+  background: #fff;
+}
+.Bbot .ff>view:nth-of-type(2){
+  text-indent: -0.5em;
+}
+.Bbot .ff.f2{
+  left: 66.6%;
+}
+.block-list:nth-of-type(5) .Bbot .ff{
+    left: 50%;
+}

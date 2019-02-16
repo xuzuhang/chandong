@@ -1,0 +1,72 @@
+/* pages/login3s/login3s.wxss */
+page{
+  color: #35354d;
+}
+.center{
+  padding-top: 32rpx;
+  width: 650rpx;
+  margin:85rpx  auto 0;
+  border-radius:8rpx; 
+  padding-bottom: 20rpx;
+}
+.main{
+  margin-top: 140rpx;
+  width: 550rpx;
+  margin: 0 auto;
+  padding-bottom: 70rpx;
+}
+.main .sex{
+  display: flex;
+  justify-content: space-around;
+  margin: 48rpx 0 35rpx;
+}
+.main .sex image{
+  width: 122rpx;
+  height: 191rpx;
+}
+
+.bottom picker{
+  margin-top: 20rpx;
+  color: #e79b09;
+  border-bottom: 1rpx solid #cccccc;
+  font-size: 33rpx;
+  padding-bottom: 8rpx;
+  text-align: center;
+}
+ .tit{
+  font-size: 37rpx;
+  font-weight: 600;
+  text-align: center;
+}
+ .xtit{
+  margin: 20rpx auto 95rpx;
+  width: 385rpx;
+  font-size: 25rpx;
+  color: #999999;
+  text-align: center;
+}
+.bottom input{
+  margin-top: 20rpx;
+  color: #e79b09;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 33rpx;
+  padding-bottom: 8rpx;
+  text-align: center;
+}
+.weight{
+  margin-top: 100rpx;
+}
+.btn{
+  margin-top:35rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.btn button{
+  width: 278rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  border-bottom-left-radius: 39rpx;
+  border-bottom-right-radius: 39rpx;
+  border-top-left-radius: 39rpx;
+  border-top-right-radius: 39rpx;
+}

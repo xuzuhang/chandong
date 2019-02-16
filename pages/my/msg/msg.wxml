@@ -1,0 +1,2 @@
+<view class="title">支付协议</view>
+<text>{{text}}</text>

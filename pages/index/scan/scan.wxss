@@ -1,0 +1,47 @@
+/* pages/index/scan/scan.wxss */
+page{
+  background:linear-gradient(to bottom,#fe9c38,#f7820c,#f47b00);
+}
+.code{
+  width: 700rpx;
+  height: 700rpx;
+  background: #fff;
+  margin: 100rpx auto 122rpx;
+  position: relative;
+  border-radius:15rpx; 
+}
+.code canvas{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%); 
+}
+.time{
+    height: 100rpx;
+    color: #fff;
+    line-height: 100rpx;
+    text-align: center;
+}
+.scan{
+  text-align:center;
+  color: #fff;
+  font-size:30rpx; 
+}
+.scan image{
+  width: 95rpx;
+  height: 80rpx;
+  margin-bottom: 8rpx;
+}
+.btn{
+  width: 550rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius:40rpx; 
+  background: #fff;
+  margin:0 auto; 
+}
+.closebtn {
+  background: red;
+  margin-top: 10rpx;
+  color: #fff;
+}

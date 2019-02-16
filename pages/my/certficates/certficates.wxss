@@ -1,0 +1,171 @@
+/* pages/my/certficates/certficates.wxss */
+.w695{
+    width: 695rpx;
+    margin: 0 auto;
+}
+.header{
+    padding: 28rpx 0 26rpx;
+    border-bottom: 1rpx solid #e6e6e6;
+    color: #9b9b9b;
+    font-size: 22rpx;
+    line-height: 32rpx;
+}
+.center{
+  padding:26rpx 0 141rpx; 
+}
+.center .title{
+  color:#000;
+  font-weight: 600;
+  font-size: 34rpx;
+  margin-bottom: 31rpx;
+}
+.ctit{
+  width: 688rpx;
+  border: 1rpx solid #0076fe;
+  border-radius:14rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.ctit>view{
+  text-align: center;
+  width: 50%;
+  color: #0679ff;
+  font-size: 27rpx;
+  font-weight:600; 
+  height: 62rpx;
+  padding: 18rpx 0;
+}
+.ctit>view.on{
+  background: #0071f8;
+  color: #fff;
+}
+.stit{
+  margin: 55rpx 0 24rpx;
+  display:flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #2c2c2c;
+  font-weight: 600;
+}
+.id-card{
+  color: #686868;
+  font-size: 22rpx;
+  display: flex;
+  justify-content: space-between;
+   padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  margin-bottom: 28rpx;
+}
+.id-card>view{
+  width: 312rpx;
+  height: 198rpx;
+  text-align: center;
+  border: 0.5rpx dotted #e0e0e0;
+  border-radius:20rpx; 
+}
+.photo image{
+  width: 82rpx;
+  height: 72rpx;
+  margin: 44rpx  0 22rpx;
+}
+.pass-top{
+  width: 404rpx;
+  height: 210rpx;
+  text-align: center;
+  border: 0.5rpx dotted #e0e0e0;
+  border-radius:20rpx; 
+  font-size: 22rpx;
+  color: #686868;
+  margin: 0 auto 45rpx;
+}
+.pass-top image{
+  margin-bottom: 10rpx;
+}
+.pass-tit{
+  color: #343434;
+  font-size:32rpx;
+  font-weight: 600; 
+}
+.pass-middle input{
+  margin: 24rpx 0 46rpx;
+  border-bottom: 1rpx #e4e4e4 solid;
+  font-size:30rpx;
+  color:#9a9a9a;
+}
+.pass-bottom input{
+  margin: 18rpx 0 20rpx;
+  border-bottom: 1rpx #e4e4e4 solid;
+  font-size:34rpx;
+  color:#f57802;
+}
+.ag-tit{
+    font-size: 28rpx;
+    text-align: center;
+    color: #020202;
+    font-weight: 600;
+    margin-bottom: 22rpx;
+}
+.Agreement{
+  overflow: hidden;
+}
+.scroll-view{
+  height: 150px;
+}
+.scroll-view text{
+  display:inline-block;
+  color:#636363;
+  font-size:22rpx;
+  padding-bottom: 40px;
+}
+.autograph{
+  float: right;
+  margin-top: 24rpx;
+  color:#636363;
+  font-size:24rpx;
+  text-align:right; 
+}
+.autograph view{
+  width:311rpx;
+  height: 130rpx;
+  background: #f5f5f5;
+  border-radius:17rpx; 
+  text-align: center;
+  line-height: 130rpx;
+  margin:8rpx 0; 
+  box-sizing:border-box;
+  border:4rpx solid goldenrod; 
+}
+.autograph view image{
+  width: 54rpx;
+  height: 54rpx;
+  vertical-align: middle;
+  margin-right: 15rpx;
+}
+.footer{
+  width: 100%;
+  height: 110rpx;
+  padding-top:30rpx; 
+  border-top:1rpx solid #ccc;
+  position: fixed;
+  bottom: 0; 
+  display:flex;
+  justify-content: space-around;
+  background: #fff;
+}
+.footer .price{
+  font-size: 29rpx;
+  color: #505050;
+  font-weight: 600;
+  margin-top:8rpx; 
+  text-align: center;
+}
+.footer .sure{
+  width: 278rpx;
+  height: 80rpx;
+  color: #fff;
+  font-size: 33rpx;
+  background: #f47c00;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius:40rpx; 
+}

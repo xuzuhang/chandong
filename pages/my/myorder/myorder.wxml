@@ -1,0 +1,112 @@
+<!--pages/my/orderDetails/orderDetails.wxml-->
+<view class='warpper'>
+      <view class='header'>
+            <view class='Htitle'>
+                  <view class='{{index==1?"on":""}}' bindtap='tab' data-index='1'>全部</view>
+                  <view class='{{index==2?"on":""}}' bindtap='tab' data-index='2'>待支付</view>
+                  <view class='{{index==3?"on":""}}' bindtap='tab' data-index='3'>已支付</view>
+            </view>
+      </view>
+      <view class='center'>
+            <scroll-view  scroll-y  style='height:1200rpx;' bindscrolltolower="alllower" wx:if="{{index==1 && allorder.length!==0}}">
+                <block wx:for="{{allorder}}" wx:key="{{index}}">
+                  <view class='m-topay' catchtap='toOrder' data-ind='{{index}}'>
+                      <view class='top'>
+                          <view style='color:#b3b3b3;'>{{item.times}}</view>
+                          <view style='color:#f68b20;font-weight:600;'>{{item.status==1?"待支付":""}}{{item.status==3?"已支付":""}}{{item.status==5?"已关闭":""}}</view>
+                      </view>
+                      <view class='middle'>
+                           <image src='{{item.coverUrl}}'></image> 
+                          <view class='m-title'>
+                                <view>{{item.title}}</view>  
+                                <view>浙江师范大学部分区域通用，只有一小 部分哦~</view> 
+                          </view>
+                          <view class='m-right'>
+                                <view>￥{{item.price}}</view>
+                                <view>x1</view>
+                          </view>
+                      </view>
+                      <view class='num'>
+                            <view>共计 1 件商品</view>
+                            <view> 总计:<text>￥{{item.price}}</text></view>
+                      </view>
+                      
+                     <view class='bottom' wx:if="{{item.status==1}}">
+                        <view class='detele' catchtap='detele' data-detei='{{index}}'>取消订单</view>
+                        <view class='payment'>付款</view>
+                    </view> 
+                     <view class='bottom' wx:else>
+                        <view class='detele' catchtap='detele' data-detei='{{index}}'>删除订单</view>
+                        <view class='payover'>{{item.status==3?"已支付":"已关闭"}}</view>
+                    </view> 
+                  </view>
+                </block>
+              </scroll-view>
+              <view class='Prompt' wx:if='{{(index==1 && allorder.length==0) || (index==2 && bepaid.length==0) || (index==3 && alreadypaid.length==0)}}'>
+                    目前没有订单哦~~
+              </view>
+            <scroll-view  scroll-y  style='height:1200rpx;' bindscrolltolower="belower" wx:if="{{index==2 && bepaid.length !==0}}">
+                <block wx:for="{{bepaid}}" wx:key="{{index}}">
+                  <view class='m-topay' catchtap='toOrder' data-ind='{{index}}'>
+                      <view class='top'>
+                          <view style='color:#b3b3b3;'>{{item.times}}</view>
+                          <view style='color:#f68b20;font-weight:600;'>待支付</view>
+                      </view>
+                      <view class='middle'>
+                           <image src='{{item.coverUrl}}'></image> 
+                          <view class='m-title'>
+                                <view>{{item.title}}</view>  
+                                <view>浙江师范大学部分区域通用，只有一小 部分哦~</view> 
+                          </view>
+                          <view class='m-right'>
+                                <view>￥{{item.price}}</view>
+                                <view>x1</view>
+                          </view>
+                      </view>
+                      <view class='num'>
+                            <view>共计 1 件商品</view>
+                            <view> 总计:<text>￥{{item.price}}</text></view>
+                      </view>
+                      
+                     <view class='bottom'>
+                        <view class='detele' catchtap='detele' data-detei='{{index}}'>取消订单</view>
+                        <view class='payment'>付款</view>
+                    </view> 
+                  </view>
+                </block>
+              </scroll-view>
+
+          <scroll-view  scroll-y  style='height:1200rpx;' bindscrolltolower="alrlower" wx:if="{{index==3 && alreadypaid.length!==0}}">
+                <block wx:for="{{alreadypaid}}" wx:key="{{index}}">
+                  <view class='m-topay' catchtap='toOrder' data-ind='{{index}}'>
+                      <view class='top'>
+                          <view style='color:#b3b3b3;'>{{item.times}}</view>
+                          <view style='color:#f68b20;font-weight:600;'>已支付</view>
+                      </view>
+                      <view class='middle'>
+                           <image src='{{item.coverUrl}}'></image> 
+                          <view class='m-title'>
+                                <view>{{item.title}}</view>  
+                                <view>浙江师范大学部分区域通用，只有一小 部分哦~</view> 
+                          </view>
+                          <view class='m-right'>
+                                <view>￥{{item.price}}</view>
+                                <view>x1</view>
+                          </view>
+                      </view>
+                      <view class='num'>
+                            <view>共计 1 件商品</view>
+                            <view> 总计:<text>￥{{item.price}}</text></view>
+                      </view>
+                      
+                     <view class='bottom' >
+                        <view class='detele'catchtap='detele' data-detei='{{index}}'>删除订单</view>
+                        <view class='payover'>已支付</view>
+                    </view> 
+                  </view>
+                </block>
+              </scroll-view>
+    
+      </view>
+</view>
+

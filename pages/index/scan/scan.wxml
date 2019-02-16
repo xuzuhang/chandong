@@ -1,0 +1,17 @@
+<!--pages/index/scan/scan.wxml-->
+<view class='wrapper'>
+      <view class='code' bindtap='news'>
+          <canvas canvas-id="canvas" style="width:{{width}}; height:{{width}};" bindtap='new'></canvas>
+      </view>
+       <view class='time' bindtap='news'>
+            点击二维码或 {{time}}s 后刷新码
+      </view>
+      <!-- <view class='scan'>
+            <image src='../indeximg/refresh.png' bindtap='scan'></image>
+            <view>扫一扫</view>
+      </view> -->
+</view>
+
+
+
+

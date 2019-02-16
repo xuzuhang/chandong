@@ -1,0 +1,18 @@
+<!--pages/login1/login1.wxml-->
+<view class='container'>
+      <view class='img'>
+            <image src='../lgimg/logo.png'></image>
+      </view>
+      <view class='main'>
+         <view class='title'>手机验证</view> 
+        <input class='phone' bindinput='yanzheng' bindblur='prompt' value='{{phone}}' type='number'></input>
+        <view class='code'>
+            <input type='number' bindblur='code' placeholder='输入验证码'></input>
+            <button  style='text-decoration: underline;border-color:#fff;background:transparent;color:{{btncolor}};font-size:28rpx;text-align:right;padding:0;' bindtap='send' disabled='{{buttondis}}'>
+            {{codemsg}}</button>
+        </view>
+        <button bindtap='next' class='next'>免费注册</button>
+        <view class='bottom'>注册即同意  蝉动<navigator url='../../common/protocol/protocol'>用户协议</navigator></view>
+      </view>
+      {{returncode}}
+</view>

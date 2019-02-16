@@ -1,0 +1,130 @@
+/* pages/store/storeInfo/storeInfo.wxss */
+.container{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.header{
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.header .tab{
+    /* width: 446rpx; */
+    display: flex;
+    margin: 0 auto;
+    font-size: 27rpx;
+    color: #989898;
+    text-align: center;
+}
+.header .tab view{
+  padding:30rpx 0 18rpx;
+  /* width: 223rpx; */
+  text-align: center;
+}
+.header .storetit{
+  width: 100%;
+  color: #000;
+}
+/* .header .tab view.on{
+  color: #000;
+  border-bottom: 4rpx solid #020202;
+} */
+.top{
+  padding: 48rpx 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.top image{
+  width: 231rpx;
+  height: 193rpx;
+}
+.storeinfo .main{
+  width: 455rpx;
+  color: #b9b9b9;
+  font-size: 22rpx;
+}
+.storeinfo .main view{
+    margin-bottom: 12rpx;
+} 
+.storeinfo .main button{
+  padding:0;
+  margin: 0;
+  background: #f47c01;
+  color: #fff;
+  font-size: 24rpx;
+  width: 212rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  border-bottom-right-radius:28rpx; 
+  border-bottom-left-radius: 28rpx;
+  border-top-right-radius: 28rpx;
+  border-top-left-radius: 28rpx;
+}
+.middle{
+    height: 88rpx;
+    padding: 20rpx 0 25rpx;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #e6e6e6;
+}
+.middle .loctit{
+    width: 533rpx;
+    color: #030303;
+    font-size: 22rpx;
+    line-height: 34rpx;
+}
+.middle .loc image{
+  width: 31rpx;
+  height: 31rpx;
+  margin:20rpx 0; 
+}
+.middle .loc{
+  font-size: 20rpx;
+  color: #ff7e00;
+  text-align: center;
+}
+.aps{
+  margin-top: 47rpx;
+}
+.aps .apstit{
+  font-size: 31rpx;
+  color: #000;
+  font-weight: 600;
+}
+.aps .apsinfo{
+  margin-top: 37rpx;
+  display:flex;
+  justify-content: space-between;
+  padding-bottom:30rpx; 
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.apsinfo image{
+  width: 122rpx;
+  height: 122rpx;
+}
+.apsinfo .aps-info-main{
+  width: 548rpx;
+  display: flex;
+  justify-content: space-between;
+}
+ .apsinfo .aps-info-main .video{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius:50%; 
+  border: 4rpx solid #f27809;
+  margin-top: 40rpx;
+  margin-right: 20rpx;
+} 
+.video .triangle{
+  margin-left: 20rpx;
+  margin-top: 16rpx;
+  width: 0;
+  height: 0;
+  border-bottom:8.66rpx solid transparent;
+  border-left: 15rpx solid #f27809;
+  border-top:8.66rpx solid transparent;
+  border-right:15rpx solid transparent;
+}
+ .aps-info-main .aps-mian-top{
+   color: #959595;
+   width: 425rpx;
+ }

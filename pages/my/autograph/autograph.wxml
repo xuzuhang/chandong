@@ -1,0 +1,22 @@
+<!--pages/my/autograph/autograph.wxml-->
+<view class='header'> 
+  请在区域内签名
+  <!-- <view style='font-size:27rpx;font-weight:normal;'>Please emm dsoyfs sdf</view> -->
+</view>
+<canvas canvas-id="myCanvas" class="myCanvas"
+            disable-scroll="false"
+            bindtouchstart="touchStart"
+            bindtouchmove="touchMove"
+            bindtouchend="touchEnd" style='width:689rpx;height:415rpx'>
+        </canvas>
+<view class='btn'>
+      <view bindtap='detele' class='detele'>
+            重签
+            <view style='font-weight:normal;font-size:22rpx;'>rewrite</view>
+      </view>
+      <view bindtap='save' class='save'>
+            完成
+            <view  style='font-weight:normal;font-size:22rpx;'>Finish</view>
+      </view>
+</view>
+  

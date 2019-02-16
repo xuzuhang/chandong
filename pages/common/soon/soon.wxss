@@ -1,0 +1,33 @@
+/* pages/common/soon/soon.wxss */
+.header{
+  text-align: center;
+  line-height: 42rpx;
+  font-size: 45rpx;
+  font-weight:600;
+  color: #413f4a;
+}
+.header image{
+  width: 240rpx;
+  height: 242rpx;
+  margin: 158rpx 0 20rpx;
+}
+.center{
+  text-align:center;
+  font-size:30rpx;
+  color: #424147;
+  margin-bottom:100rpx;
+}
+.btn{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  width: 500rpx;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background: #f57800;
+  border-bottom-left-radius:40rpx;
+  border-top-right-radius:40rpx;
+  border-bottom-right-radius:40rpx;
+  border-top-left-radius:40rpx;
+}

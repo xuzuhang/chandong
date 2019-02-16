@@ -1,0 +1,2 @@
+<!--pages/my/recommendimg/recommendimg.wxml-->
+<image src='{{src}}'></image>

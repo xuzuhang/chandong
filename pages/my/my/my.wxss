@@ -1,0 +1,159 @@
+/* pages/my/my.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  height: 415rpx;
+  width: 100%;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  position: absolute;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.header>view{
+  margin-top:280rpx;
+}
+.myInfo{
+  margin-left:30rpx; 
+  display:flex;
+}
+.myInfo>image{
+  border: 2rpx solid #f78e27;
+  width: 124rpx;
+  height: 124rpx;
+  border-radius:50%; 
+}
+.myInfo>view{
+  margin:22rpx 0 0 25rpx;
+  color: #666;
+  font-size: 22rpx;
+}
+.mytit{
+  font-size: 38rpx;
+  font-weight: 600;
+  color: #3f2d12;
+  margin-bottom: 15rpx;
+}
+.mytit image{
+  margin-left:10rpx; 
+  width: 33rpx;
+  height: 38rpx;
+}
+.revise{
+  margin-right: 30rpx;
+}
+.revise image{
+  margin-top: 30rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+.center{
+  padding-top: 287rpx;
+  width: 695rpx;
+  transition: all 0.5s linear;
+}
+.center .overplus{
+  margin-top:50rpx;
+  text-align:center;
+  margin-bottom: 18rpx;
+  font-size: 21rpx;
+  color: #999;
+  position: relative;
+}
+.Cbtn{
+    position:absolute;
+    top: 20rpx;
+    right: 0;
+}
+.Cbtn>view{
+    height: 60rpx;
+    line-height: 60rpx;
+    width: 150rpx;
+    font-size: 26rpx;
+    font-weight: 600;
+    border: 1rpx solid #f47c01;
+    border-radius:30rpx; 
+}
+.experience{
+  height: 440rpx;
+  border: 1rpx solid #f7f4f2;
+  box-shadow: 5rpx 5rpx 28rpx #f7f4f2;
+  border-radius:16rpx; 
+  overflow: hidden;
+}
+.experience>view{
+  margin: 0 auto;
+  width: 636rpx;
+}
+.ex-top{
+  font-size: 28rpx;
+  padding:30rpx 0;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+.ex-top image{
+  width: 40rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 17rpx;
+}
+.ex-anima{
+  height: 20rpx;
+  background:#e6e6e6;
+  width: 100%;
+  border-bottom-left-radius:10rpx; 
+  border-bottom-right-radius: 10rpx;
+  border-top-left-radius:10rpx; 
+  border-top-right-radius: 10rpx;
+}
+.ex-ancor{
+  height: 20rpx;
+  background: #f57a00;
+  border-radius:10rpx; 
+  transition: all 1s linear;
+}
+.ex-middle{
+  font-size: 23rpx;
+  color: #ccc;
+  padding:38rpx 0 50rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.ex-middle image{
+  width: 85rpx;
+  height: 91rpx;
+}
+.ex-middle>view{
+  text-align: center;
+  width: 95rpx;
+  line-height: 40rpx;
+}
+.ex-more{
+  text-align: center;
+  color: #666;
+  font-size: 24rpx;
+}
+.footer{
+  width: 695rpx;
+  margin: 40rpx auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap; 
+}
+.footer image{
+    width: 92rpx;
+    height: 77rpx;
+}
+.footer navigator{
+  text-align: center;
+  width: 120rpx;
+  font-size: 26rpx;
+  color: #000;
+  margin: 0  40rpx 40rpx;
+}

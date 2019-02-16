@@ -1,0 +1,42 @@
+<!--pages/my/orderDetails/orderDetails.wxml-->
+      <view class='header'>
+              <view class='middle'>
+                  <image src='{{order.coverUrl}}'></image>
+                  <view class='m-title'>
+                        <view>{{order.title}}</view> 
+                        <view>浙江师范大学部分区域通用，只有一小 部分哦~</view> 
+                  </view>
+                  <view class='m-right'>
+                        <view>￥{{order.price}}</view>
+                        <view>x1</view>
+                  </view>
+              </view>
+              <view class='num'>
+                    <view>共计 1 件商品</view>
+                     <view>总计:<text>￥{{order.price}}</text></view> 
+              </view>
+        </view>
+        <view class='center'>
+              <view class='c-title'>订单详情</view>
+              <view class='c-list'>
+                    <view>订单号</view>
+                    <view>{{order.id}}</view>
+              </view>
+              <view class='c-list'>
+                    <view>下单时间</view>
+                    <view>{{order.times}}</view>
+              </view>
+              <view class='c-list'>
+                    <view>商品总价</view>
+                    <view>￥{{order.price}}</view>
+              </view>
+              <view class='c-list'>
+                    <view>实付款</view>
+                    <view style='color:#f47c00;font-size:28rpx;'>￥{{order.price}}</view>
+              </view>
+              <view class='backIndex'wx:if="{{order.status!==1}}" bindtap='toindex'>返回首页</view>
+        </view>
+        <view class='footer' wx:if="{{order.status==1}}">
+                <!-- <view class='detele'>取消订单</view> -->
+                <view class='payment' bindtap='topay'>付款 {{time.m}}:{{time.s}}</view>
+        </view>

@@ -1,0 +1,140 @@
+/* pages/sport/testPhysical/testPhysical.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  height: 222rpx;
+  color: #fff;
+  background: linear-gradient(to bottom,#f57a00,#f88100,#fd9600);
+  overflow: hidden;
+  text-align: center;
+  font-size:26rpx;
+}
+.Htit{
+  font-size: 50rpx;
+  font-weight:600;
+  width: 155rpx;
+  height: 80rpx;
+  margin: 55rpx auto 20rpx;
+  position: relative;
+}
+.Htit image{
+  width: 12rpx;
+  height: 22rpx;
+  position: absolute;
+  right: 2rpx;
+}
+.Htit .up{
+  top: 10rpx;
+}
+.Htit .down{
+  bottom: 20rpx;
+}
+.center{
+  width: 685rpx;
+  margin: 28rpx auto;
+  padding-bottom: 120rpx; 
+}
+.sptimes{
+   margin-bottom:50rpx;
+}
+.sptimes picker{
+  padding:40rpx 0 10rpx; 
+  font-size:23rpx;
+  color: #000;
+}
+.week{
+  margin: 25rpx 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.weekList{
+  width: 60rpx;
+  height: 156rpx;
+  color: #404040;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+.weekList .progr{
+  height: 100rpx;
+  display: flex;
+  align-items: flex-end;
+}
+.weekList .progr>view{
+  background: #36364d;
+  width: 10rpx;
+  border-radius:5rpx; 
+  margin-left: 24rpx;
+  margin-bottom: 20rpx;
+}
+.weekList.on{
+  color: #f57a00;
+}  
+.weekList.on .progr>view{
+  background: #f57a00;
+}
+.Clist{
+  height: 265rpx;
+  box-shadow: 5rpx 5rpx 28rpx #f7f4f2;
+  border-radius: 16rpx;
+  width: 668rpx;
+  padding-left: 27rpx;
+  margin-bottom: 23rpx;
+  color: #a1a1a1;
+  font-size: 24rpx;
+}
+.CL-top{
+  border-bottom: 1rpx #e6e6e6 solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 22rpx 0 12rpx;
+}
+.CL-top .time{
+    color: #3d3d3d;
+    font-size: 26rpx;
+    font-weight: 600;
+}
+.CL-top .main{
+  margin-right: 25rpx;
+  font-size: 26rpx;
+}
+.CL-bot{
+  display:flex;
+  justify-content: space-around;
+}
+.CL-bot>view{
+  width:220rpx;
+  text-align: center;
+  margin-top: 22rpx;
+}
+.Cl-num{
+  font-size:38rpx;
+  color: #050505;
+  margin: 15rpx 0;
+}
+.footer{
+  height: 120rpx;
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  background: #fff;
+}
+.footer .btn{
+  height: 80rpx;
+  font-size:27rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  width: 556rpx;
+  background: #f57b00;
+  margin: 0 auto;
+  border-radius:40rpx; 
+}
+.Prompt{
+  color: #ccc;
+  text-align: center;
+  height: 400rpx;
+  line-height: 400rpx;
+}

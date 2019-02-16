@@ -1,0 +1,8 @@
+<!--pages/common/enterImg/enterImg.wxml-->
+<!-- <button bindtap='tologin'>首页图片页</button> -->
+<view class='wrapper'>
+      <image src='https://static-1257000451.cos.ap-shanghai.myqcloud.com/loading.jpg'></image>
+       <!-- <view class='btn' bindtap='tologin'>跳过 {{time}}s</view>  -->
+       <button class='btn' bindtap='nextLoc' plain="true" wx:if="{{!lac}}" open-type='openSetting'>跳过 {{time}}{{s}}</button> 
+       <button class='btn' wx:else open-type='getUserInfo'  bindgetuserinfo='next'>跳过 {{time}}{{s}}</button> 
+</view>

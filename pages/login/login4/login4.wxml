@@ -1,0 +1,38 @@
+<!--pages/login3s/login3s.wxml-->
+<view class='container'>
+    <view class='center'>
+        <view class='main'>
+            <view class='height'>
+                <view class='tit'>
+                      您的身高？
+                </view>
+                <view class='xtit'>
+                      我们会根据您的身高设计训练内容
+                </view>
+                <view class='bottom'>
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    {{array[index]}}cm
+                    </picker>
+                </view>
+            </view>
+             <view class='weight'>
+                <view class='tit'>
+                      您的体重？
+                </view>
+                <view class='xtit'>
+                      放心这个秘密不会被第二个人知道
+                </view>
+                <view class='bottom'>
+                     <input type='digit' bindblur='weight' value='{{weightValue}}' bindfocus='kgnone'></input> 
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='btn'>
+          <button plain='true' style='color:#f79733;border-color:#f79733;' bindtap='last'>上一步</button>
+          <button style='color:#fff;background:#f79733;' bindtap='next'>下一步</button>
+</view>
+
+
+

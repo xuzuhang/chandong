@@ -1,0 +1,39 @@
+<!--pages/my/Lockers/Lockers.wxml-->
+<view class='wrapper'>
+      <view class='start' wx:if="{{state==1}}">
+            <view class='Sheader'>
+                  租用储物柜
+                <view>1蜕变值可租用1小时</view>
+            </view>
+            <view class='Sbtn' bindtap='start'>启用柜子</view>
+            <view class='Cfot'>于每日零点自动退租</view>
+      </view>
+      <view class='inhand' wx:if="{{state==2}}">
+            <view class='Iheader'>
+                  计时
+                  <view>{{timer.h}} : {{timer.m}} : {{timer.s}}</view>
+            </view>
+            <view class='Icenter'>
+                  为您分配{{shop}}
+                  <view>{{num}}号储物柜</view>
+            </view>
+            <view class='btn-group'>
+                  <view class='Retire' bindtap='Retire'>退租</view>
+                  <view class='open' bindtap='open'>开柜</view>
+            </view>
+            <view class='Cfot'>于每日零点自动退租</view>
+      </view>
+      <view class='end' wx:if="{{state==3}}">
+            <view class='Eheader'>
+                  关上柜门 结束租柜
+                  <view>别忘了带好自己的私人物品</view>
+             </view>
+            <!-- <view class='Ecenter'>
+                  共消耗 12 蜕变值
+                  <view>剩余 3127 蜕变值</view>
+             </view> -->
+             <view class='Sbtn' bindtap='back'>
+                  返回
+             </view>
+      </view>
+</view>

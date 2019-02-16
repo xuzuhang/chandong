@@ -1,0 +1,56 @@
+<!--pages/login2/login2.wxml-->
+<view class='container'>
+      <view class='center' >
+            <image src='{{imgsrc}}'></image>
+            <view class='main'>
+                  <view class='title'>基本信息<text>'*'为必填项</text></view>
+                  <view class='name info'>
+                      <view class='top'>
+                          昵称 <text>*</text>
+                      </view>
+                      <view class='bottom'>
+                            <input type='text' bindblur='nameinfo' placeholder='输入您的姓名' value='{{name}}'></input>
+                      </view>
+                  </view>
+
+                  <view class='job info'>
+                      <view class='top spb'>
+                          <view>从事职业</view> <view class='left'>选填 奖励1蜕变值</view> 
+                      </view>
+                      <view class='bottom'>
+                            <input type='text' bindblur='jobinfo' placeholder='输入您的职业' value='{{job}}'></input>
+                      </view>
+                  </view>
+                  <view class='salary info'>
+                      <view class='top spb'>
+                          <view>收入水平</view> <view class='left'>选填 奖励1蜕变值</view> 
+                      </view>
+                      <view class='bottom'>
+                            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                                 ￥{{array[index]}}
+                            </picker>
+                      </view>
+                  </view>
+                   <view class='home info' bindtap='homeInfo'>
+                      <view class='top spb'>
+                          <view>家庭地址 <text>*</text></view> <view class='left'>为您匹配离你住址最近的蝉动门店</view> 
+                      </view>
+                      <view class='bottom'>
+                            <view class='map'>{{home.address}}</view>
+                      </view>
+                  </view>
+                   <view class='jobadderss info' bindtap='jobadderssInfo'>
+                      <view class='top spb'>
+                          <view>公司地址 <text>*</text></view> <view class='left'>为您匹配离你公司最近的蝉动门店</view> 
+                      </view>
+                      <view class='bottom'>
+                        <view class='map'>{{jobadderss.address}}</view>
+                      </view>
+                  </view>
+            </view>
+      </view>
+      <button  bindtap='next' class='next'>下一步</button>
+</view>
+
+
+

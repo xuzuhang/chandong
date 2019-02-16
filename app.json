@@ -1,0 +1,97 @@
+{
+  "pages":[
+    "pages/common/enterImg/enterImg",
+    "pages/my/msg/msg",
+    "pages/index/index/index",
+    "pages/login/login7/login7",
+    "pages/login/login2/login2",
+    "pages/login/login1/login1",
+    "pages/error/error/error",
+    "pages/my/certficates/certficates",
+    "pages/state/Release/Release",
+    "pages/login/login3/login3",
+    "pages/my/cardDetails/cardDetails",
+    "pages/my/my/my",
+    "pages/my/Recharge/Recharge",
+    "pages/index/aboutUs/aboutUs",
+    "pages/my/pay/pay",
+    "pages/my/payRecharge/payRecharge",
+    "pages/sport/Result/Result",
+    "pages/state/state/state",
+    "pages/login/login4/login4",
+    "pages/login/login5/login5",
+    "pages/store/store/store",
+    "pages/my/recommendimg/recommendimg",
+    "pages/index/joinUs/joinUs",
+    "pages/my/MemberAgreement/MemberAgreement",
+    "pages/sport/sport/sport",
+    "pages/sport/Allinstruments/Allinstruments",
+    "pages/store/apparatus/apparatus",
+    "pages/index/scan/scan",
+    "pages/my/wallet/wallet",
+    "pages/sport/testPhysical/testPhysical",
+    "pages/my/Processing/Processing",
+    "pages/my/orderDetails/orderDetails",
+    "pages/login/login6/login6",
+    "pages/state/stateinfo/stateinfo",
+    "pages/store/storeInfo/storeInfo",
+    "pages/sport/bodyHeath/bodyHeath",
+    "pages/my/myorder/myorder",
+    "pages/my/feedback/feedback",
+    "pages/my/Lockers/Lockers",
+    "pages/common/news/news",
+    "pages/my/card/card",
+    "pages/my/autograph/autograph",
+    "pages/common/soon/soon",
+    "pages/common/privacy/privacy",
+    "pages/common/protocol/protocol"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "蝉动",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexc.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sport/sport/sport",
+        "iconPath": "image/sport.png",
+        "selectedIconPath": "image/sportc.png",
+        "text": "运动"
+      },
+      {
+        "pagePath": "pages/store/store/store",
+        "iconPath": "image/store.png",
+        "selectedIconPath": "image/storec.png",
+        "text": "门店"
+      },
+      {
+        "pagePath": "pages/state/state/state",
+        "iconPath": "image/state.png",
+        "selectedIconPath": "image/statec.png",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/my/my/my",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/myc.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "downloadFile": 10000
+  }
+}

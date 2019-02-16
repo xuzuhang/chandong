@@ -1,0 +1,66 @@
+/* pages/my/pay/pay.wxss */
+.header{
+  color:#999;
+  font-size: 25rpx;
+  text-align: center;
+  margin: 70rpx 0 100rpx;
+}
+.bepaid{
+    margin:0 auto 47rpx;
+    width: 695rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 33rpx;
+    font-weight:600;
+    padding-bottom: 18rpx;
+    border-bottom: 1rpx solid #e6e6e6;
+}
+.Htime{
+  font-size: 32rpx;
+  color: #000;
+  font-weight: 600;
+}
+.modetit{
+    margin:0 auto 15rpx;
+    width: 695rpx;
+    font-size: 33rpx;
+    font-weight:600;
+}
+.mode{
+  display: flex;
+  justify-content: space-between;
+}
+.mode-item{
+  width: 678rpx;
+  display: flex;
+  height: 112rpx;
+  line-height: 112rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.mode-item image{
+  width: 94rpx;
+  height: 94rpx;
+  margin: 0 30rpx 0 70rpx;
+}
+.mode-item>view{
+  font-size: 25rpx;
+  margin-top:-7rpx;
+  font-weight: 600;
+}
+radio{
+  margin-right: 32rpx;
+  margin-top: 20rpx;
+}
+.radio-group .radio:nth-of-type(4) .mode-item{
+  border: none;
+}
+.footer{
+  color: #fff;
+  background: #f47b00;
+  width: 550rpx;
+  height: 80rpx;
+  border-radius:40rpx; 
+  line-height: 80rpx;
+  text-align: center;
+  margin:130rpx auto 0;
+}

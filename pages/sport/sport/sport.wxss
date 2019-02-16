@@ -1,0 +1,248 @@
+/* pages/sport/sport.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+.w695{
+  width:695rpx;
+  margin: 0 auto;
+}
+.header{
+  height: 200rpx;
+  color: #fff;
+  background: linear-gradient(to bottom,#f57a00,#f88100,#fd9600);
+  overflow: hidden;
+}
+.Htop{
+  margin: 36rpx  auto 75rpx;
+  font-size: 23rpx;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+.Htop .head{
+  height: 105rpx;
+  width: 105rpx;
+  border-radius:50%; 
+  background: #fff;
+}
+.Htop .head image{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+}
+.header .hotvalue{
+  display: flex;
+  justify-content: space-between;
+}
+.hotvalue .Hlist{
+  font-size: 45rpx;
+  font-weight: 600; 
+  text-align: center;
+  width: 180rpx;
+  position: relative;
+}
+.hotvalue .Hlist image{
+  width: 12rpx;
+  height: 22rpx;
+  position: absolute;
+}
+.hotvalue .Hlist image.up{
+  top: 15rpx;
+  right: 20rpx;
+}
+.hotvalue .Hlist image.down{
+    bottom: 68rpx;
+    right: 20rpx;
+}
+.hotvalue .Hlist view{
+  font-size: 22rpx;
+  font-weight: normal; 
+  margin-top: 40rpx;
+}
+.sptimes picker{
+  padding:40rpx 0 10rpx; 
+  font-size:23rpx;
+  color: #000;
+}
+.week{
+  margin: 25rpx 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.weekList{
+  width: 60rpx;
+  height: 156rpx;
+  color: #404040;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+.weekList .progr{
+  height: 100rpx;
+  display: flex;
+  align-items: flex-end;
+}
+.weekList .progr>view{
+  background: #36364d;
+  width: 10rpx;
+  border-radius:5rpx; 
+  margin-left: 24rpx;
+  margin-bottom: 20rpx;
+}
+.weekList.on{
+  color: #f57a00;
+}  
+.weekList.on .progr>view{
+  background: #f57a00;
+}
+.Ctit{
+  height: 183rpx;
+  width: 100%;
+  border-radius:24rpx;
+  box-shadow: 5rpx 5rpx 28rpx #f7f4f2;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  margin:50rpx 0 57rpx;
+}
+.Ctit navigator image{
+  width: 81rpx;
+  height: 81rpx;
+}
+.Ctit navigator{
+      color: #000;
+      font-size: 22rpx;
+      display: block;
+      width: 95rpx;
+      height: 110rpx;
+      text-align: center;
+      margin-top:30rpx;
+}
+.Ctit>view image{
+  width: 81rpx;
+  height: 81rpx;
+}
+.Ctit>view{
+    color: #000;
+      font-size: 22rpx;
+      display: block;
+      width: 95rpx;
+      height: 110rpx;
+      text-align: center;
+      margin-top:30rpx;
+}
+.Ftitle{
+  color: #404040;
+  font-size: 33rpx;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+}
+.Flist{
+  color: #b3b3b3;
+  font-size:28rpx;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+  border-bottom: 1rpx solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+}
+.list-week{
+  padding-bottom: 12rpx;
+   width: 100rpx;
+}
+.list-week.on{
+  color: #000;
+  border-bottom: 1rpx solid #000;
+}
+.plan{
+  padding-bottom: 110rpx;
+  border-left:1rpx #ccc solid;
+  margin-left: 50rpx; 
+}
+.plan-list{
+  font-size: 27rpx;
+  font-weight: 600;
+  padding: 47rpx 0 77rpx;
+  position: relative;
+}
+.plan-list .circular{
+  width: 22rpx;
+  height: 22rpx;
+  border-radius:50%;
+  border: 1rpx #999 solid;
+  display: inline-block; 
+  position: absolute;
+  left: -14rpx;
+  top: 53rpx;
+  background: #fff;
+}
+.makeplan{
+    background: #fff;
+    position: absolute;
+    bottom: 30rpx;
+    left: 30rpx;
+    border-radius: 30rpx;
+    transform-origin: center;
+    transition:transform 0.3s linear;
+}
+.makeplan .picker{
+  border-bottom: 1rpx solid #e6e6e6;
+  width: 610rpx;
+  margin-left: 85rpx;
+  height: 93rpx;
+  line-height: 93rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: #000;
+}
+.makeplan .picker .picktit{
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-left: -46rpx;
+}
+.makeplan  picker:nth-of-type(1){
+  margin-top: 44rpx;
+}
+.makeplan .picker .pickma{
+  margin-right: 33rpx;
+}
+.makeplan picker image{
+  width: 32rpx;
+  height: 49rpx;
+  vertical-align: middle;
+  margin-bottom: 4rpx;
+}
+.makeplan .middle{
+  width: 100%;
+  height: 25rpx;
+  background: #e6e6e6;
+}
+.makeplan .Pbtn{
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.makeplan .Pbtn>view{
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #f47c01;
+  color: #fff;
+  text-align: center;
+  border-radius:40rpx; 
+}
+.makeplan .Pbtn>view.remove{
+  background: #fff;
+  border: 1rpx solid #6d6d6d;
+  color: #6d6d6d;
+}
+.makeplan .Pbtn>view.Preservation{
+  border: 1rpx solid #f47c01;
+}

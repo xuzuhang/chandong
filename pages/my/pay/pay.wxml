@@ -1,0 +1,55 @@
+<!--pages/my/pay/pay.wxml-->
+<view class='header'>
+      剩余支付时间
+     <view class='Htime'>{{time.m}} : {{time.s}}</view>
+</view>
+<view class='center'>
+      <view class='bepaid'>
+            <view>待支付</view>
+            <view style='color:#f58c20;'>￥ {{order.price}}</view>
+      </view>
+      <view class='modetit'>
+          支付方式
+      </view>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" >
+                <view class='mode'>  
+                  <view class='mode-item'>
+                      <image src='../myimg/WeChat.png'></image>
+                      <view>微信支付</view>
+                  </view>
+                  <radio value="1" checked="true"/>
+                </view>
+            </label>
+            <!-- <label class="radio" >
+                <view class='mode'>  
+                  <view class='mode-item'>
+                      <image src='../myimg/WeChat.png'></image>
+                      <view>支付宝支付</view>
+                  </view>
+                  <radio value="2" />
+                </view>
+            </label> -->
+            <!-- <label class="radio" >
+                <view class='mode'>  
+                  <view class='mode-item'>
+                      <image src='../myimg/wallet.png'></image>
+                      <view>余额支付 <text style='color:#f47c01;'>(可用余额{{money}}元)</text></view>
+                  </view>
+                  <radio value="3" />
+                </view>
+            </label> -->
+            <label class="radio"  wx:if="{{!(order.cardId=='4')}}">
+                <view class='mode'>  
+                  <view class='mode-item'>
+                      <image src='../myimg/tui.png'></image>
+                      <view>蜕变值支付 <text style='color:#f47c01;'>(可用蜕变值{{changeValue}})</text></view>
+                  </view>
+                  <radio value="4"/>
+                </view>
+            </label>
+     </radio-group>
+</view>
+<view class='footer' bindtap='sure'>
+    确认支付
+</view>

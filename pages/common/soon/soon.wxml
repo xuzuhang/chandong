@@ -1,0 +1,10 @@
+<!--pages/common/soon/soon.wxml-->
+<view class='header'>
+      <image src='../../my/myimg/mylogos.png'></image>
+      <view>{{title}}</view>
+      <view style='margin:20rpx 0 166rpx;font-size:35rpx;font-weight:550;'>代码君正在为您全力开发中</view>
+</view>
+<view class='center'> 
+      不日即将与您见面,敬请期待
+</view>
+<view class='btn' bindtap='back'>逛逛别的</view>

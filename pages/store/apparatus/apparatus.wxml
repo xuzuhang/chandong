@@ -1,0 +1,17 @@
+<!--pages/store/apparatus/apparatus.wxml-->
+<view class='container'>
+    <video src="http://www.w3school.com.cn//i/movie.mp4"></video>
+    <view class='info'>
+        <view class='title'>动感单车</view>
+        <view class='main'>
+              <view class='tit'>1.怎么骑</view>
+              <image src='../../index/indeximg/info.png'></image>
+              <view class='article'>稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩</view>
+        </view>
+        <view class='main'>
+              <view class='tit'>1.怎么骑</view>
+              <image src='../../index/indeximg/info.png'></image>
+              <view class='article'>稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩稻花金钩</view>
+        </view>
+    </view>
+</view>

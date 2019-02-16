@@ -1,0 +1,31 @@
+<!--pages/my/feedback/feedback.wxml-->
+<view class='header w695'>
+      <view class='Htitle'>
+            <view class='tit'>反馈类型</view>
+            <!-- <view bindtap='toProcessing'>处理明细</view> -->
+      </view>  
+      <view class='Htab'>
+            <block wx:for='{{tabArray}}' wx:key='{{index}}'>
+                  <view class='tab {{indexs==index?"on":""}}' data-index='{{index}}' bindtap='tabcg'>{{item}}</view>
+            </block>
+      </view> 
+</view>
+<view class='center w695'>
+      <view class='tit' style='margin-bottom:32rpx;'>问题或建议详情</view>
+      <textarea bindblur='text' placeholder='提供准确的时间点对于我们快速的解决问题很重要如 20**年**月**时**分，请尽可能详细填写'></textarea>
+      <view class='tit'>问题或建议详情 <text style='font-size:26rpx;color:#9c9c9c;font-weight:normal;'>(选填 最多可以上传4张)</text>            </view>
+      <view class='photo'>
+            <block wx:for="{{imgArray}}" wx:key="{{index}}"> 
+                <view class='Pimg'>
+                    <icon bindtap='remove' type="clear" size="18" color="#f64f3d" data-index='{{index}}'/>
+                    <image src='{{item}}'></image>
+                </view>
+            </block>
+            <view bindtap='addImg' wx:if="{{imgArray.length<=3}}" class="csm">
+                  <image src='../myimg/myadd.png'></image>
+            </view>
+      </view>
+</view>
+<view class='footer'>
+      <view class='btn' bindtap='tofeedback'>提交反馈</view>
+</view>

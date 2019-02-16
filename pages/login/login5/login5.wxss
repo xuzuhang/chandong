@@ -1,0 +1,57 @@
+/* pages/login4/login4.wxss */
+page{
+  color: #35364b;
+}
+.center{
+  padding-top: 32rpx;
+  width: 650rpx;
+  margin:85rpx  auto 0;
+  border-radius:8rpx; 
+  overflow: scroll;
+  padding-bottom: 150rpx;
+}
+.center .title{
+  text-align: center;
+  font-weight: 600;
+}
+.main{
+  margin-top: 140rpx;
+  width: 550rpx;
+  margin: 0 auto;
+  padding-bottom: 70rpx;
+}
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.img::-webkit-scrollbar{
+  display:none
+  }
+.img>view{
+  width: 180rpx;
+  height: 270rpx;
+  margin-bottom: 25rpx;
+  position: relative;
+}
+.img image{
+  width: 180rpx;
+  height: 270rpx;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.btn{
+  margin-top:35rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.btn button{
+  width: 278rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  border-bottom-left-radius: 39rpx;
+  border-bottom-right-radius: 39rpx;
+  border-top-left-radius: 39rpx;
+  border-top-right-radius: 39rpx;
+}

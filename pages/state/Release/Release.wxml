@@ -1,0 +1,33 @@
+<!--pages/state/Release/Release.wxml-->
+<view class='header'>
+      <textarea placeholder='此刻的想法.....' bindinput="bindWordLimit" maxlength='300'></textarea>
+      <view class='words'>{{wordslen}}/300</view>
+      <view class='Hshow'>
+            <view class='photo' wx:if="{{types=='photo'}}">
+                  <block wx:for="{{imgArray}}" wx:key="{{index}}"> 
+                      <view class='Pimg'>
+                          <icon bindtap='remove' type="clear" size="18" color="#f64f3d" data-index='{{index}}'/>
+                          <image src='{{item}}'></image>
+                      </view>
+                  </block>
+                  <view bindtap='addImg' wx:if="{{imgArray.length<=3}}">
+                        <image src='../stateimg/statebg1.png' bindtap='chooseImg'></image>
+                  </view>
+            </view>
+            <view wx:else class='video'>
+                    <video src="{{videosrc.tempFilePath}}"></video>
+            </view>
+      </view>
+</view>
+
+<view class='center'>
+      <!-- <view class='conversation'>
+          <view>参与话题</view>
+          <picker bindchange="bindPickerChange" value="{{conindex}}" range="{{conArray}}">
+              {{conArray[conindex]}}
+          </picker>
+      </view> -->
+</view>
+<view class='footer'>
+      <view class='btn' bindtap='sendDynamics'>发布动态</view>
+ </view>

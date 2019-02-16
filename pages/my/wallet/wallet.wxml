@@ -1,0 +1,27 @@
+<!--pages/my/wallet/wallet.wxml-->
+<view class='header'>
+      <view>脱变值</view>
+      <view class='Hmoney'>{{money}}</view>
+</view>
+<scroll-view  scroll-y  style='height:75%;' bindscrolltolower="lower">
+    <view class='center'>
+      <view class='Ctit'>蜕变值明细</view>
+          <view class='Prompt' wx:if="{{arraylist.length==0}}" >
+              没有交易记录哦~~
+          </view>
+        <block wx:for="{{arraylist}}" wx:key="{{index}}">
+            <view class='list'>
+                  <view class='L-left'>
+                        {{item.remarks}}
+                        <view class='time'>{{item.createTime}}</view>
+                  </view>
+                  <view class='L-right' style='color:{{item.color}};'>{{item.amount}}
+                    <view class='balance'>余额{{item.balance}}</view>
+                  </view>
+            </view>
+        </block>
+    </view>
+</scroll-view>
+<view class='footer'>
+      <view class='btn' bindtap='toRecharge'>充值</view>
+</view>

@@ -1,0 +1,25 @@
+/* pages/sport/bodyHeath/bodyHeath.wxss */
+.header{
+  margin: 26rpx 0 200rpx;
+  font-size: 27rpx;
+  color: #f67500;
+  text-align: center;
+}
+.center{
+  text-align: center;
+  font-size: 35rpx;
+  color: #f67500;
+  font-weight: 600;
+}
+.center image{
+  width: 130rpx;
+  height: 130rpx;
+  margin: 24rpx 0 130rpx;
+}
+.footer{
+  text-align:center;
+}
+.footer image{
+    width:653rpx;
+    height: 386rpx;
+}

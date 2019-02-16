@@ -1,0 +1,41 @@
+<!--pages/login3/login3.wxml-->
+<view class='container'>
+    <view class='center'>
+        <view class='main'>
+            <view class='title'>您的性别？</view>
+            <view class='xtitle'>我们会根据性别设计训练内容</view>
+            <view class='sex'>
+                <block wx:for='{{sexarray}}' wx:key="{{index}}">
+                    <view bindtap='changesex' data-sex='{{index}}'>
+                          <image src='{{item.pic}}' style='display:{{item.dism}}'></image>
+                          <image src='{{item.picc}}' style='display:{{item.disc}}'></image>
+                    </view>
+                </block> 
+            </view>
+            <view class='date'>
+                <view class='tit'>
+                      您的生日
+                </view>
+                <view class='xtit'>
+                      仅用做设计训练的依据,我们会保守这个秘密
+                </view>
+                <view class='bottom'>
+                    <picker mode="date" value="{{date}}" start="1958-01-01" end="2018-01-01"  
+                      bindchange="bindDateChange">
+                        {{date}}
+                    </picker>  
+                </view>
+            </view>
+      
+        </view>
+    </view>
+</view>
+<view class='btn'>
+          <button plain='true' style='color:#f79733;border-color:#f79733;' bindtap='last'>上一步</button>
+          <button style='color:#fff;background:#f79733;' bindtap='next'>下一步</button>
+</view>
+
+
+
+
+            

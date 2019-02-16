@@ -1,0 +1,23 @@
+<!--pages/state/stateinfo/stateinfo.wxml-->
+<view class='header'>
+      <view class='video' wx:if='{{video !== ""}}'>
+          <video src='{{video}}'></video>
+      </view>
+    <swiper wx:else class="swiper" indicator-dots="true" autoplay="true" interval="2000" duration="1000">    
+      <block wx:for="{{imgs}}" wx:key='{{index}}'>  
+          <swiper-item>    
+            <image bindtap='share' data-img='{{item.url}}' src="{{item.url}}" bindload='imgStyles' style='height:{{item.height}};width:{{item.width}};' data-in='{{index}}'/> 
+          </swiper-item>   
+      </block>    
+    </swiper> 
+</view>
+<view class='center'>
+    <view class='top'>
+        <image src='{{user.avatarUrl}}'></image>
+        <view class='name'>{{user.name}}</view>
+    </view>
+    <view class='tit'>
+        {{user.tit}}
+    </view>
+</view>
+<button class='btn' wx:if="{{userId == id}}" bindtap='remove'>删除</button>

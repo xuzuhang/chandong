@@ -1,0 +1,73 @@
+<!--pages/index/index.wxml-->
+<view class='header'>
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{banner}}" wx:key='{{index}}'>    
+        <swiper-item>    
+         <navigator wx:if='{{item.behavior=="page"}}' url='{{item.parameters.path}}' hover-class="none">
+          <image src="{{item.coverUrl}}" />    
+          </navigator>
+         <navigator wx:else target="miniProgram" version="trial" app-id="{{item.parameters.appid}}" hover-class="none">
+            <image src="{{item.coverUrl}}" />    
+          </navigator>
+        </swiper-item>    
+      </block>    
+         
+    </swiper> 
+</view>
+<view class='center'>
+    <view class='centertop'>
+        <view class='top'>
+            <view class='location'>
+                <image src='../indeximg/location.png'></image>
+                <text>所在地  {{district}}</text>
+            </view>
+            <!-- <view class='num'>
+                <text>全国连锁3500家</text>
+                <image src='../indeximg/num.png'></image>
+            </view> -->
+             <navigator class='scan' url='../scan/scan' hover-class="none">
+                  <image src='../indeximg/scan.png'></image>
+                <view>扫码开门</view>
+            </navigator>
+        </view>
+         <view class='list'>
+            <view class='left'>
+                <navigator url='../../sport/testPhysical/testPhysical' hover-class="none">
+                  <image src='../indeximg/tv.png'></image>
+                  <view>智能体测</view>
+                </navigator>
+                 <navigator url='../../common/soon/soon?title=运动打卡&nav=运动打卡' hover-class="none">
+                  <image src='../indeximg/sportc.png'></image>
+                  <view>运动打卡</view>
+                </navigator>
+            </view>
+            <view class='right'>
+                 <navigator url='../../common/soon/soon?title=蝉动商城&nav=蝉动商城' hover-class="none">
+                  <image src='../indeximg/shop.png'></image>
+                  <view>蝉动商城</view>
+                </navigator> 
+                 <navigator url='../../my/card/card' hover-class="none">
+                  <image src='../indeximg/cord.png'></image>
+                  <view>购卡续费</view>
+                </navigator>
+            </view>
+          </view>
+    </view>
+    <view class='banner'>
+        <image src='https://static-1257000451.cos.ap-shanghai.myqcloud.com/advertisements/joinus.jpg' bindtap='toJoin'></image>
+    </view>
+    <view class='recommend'>
+        <view class='title'>
+                推荐门店
+        </view>
+        <view class='info'>
+          <block wx:for="{{storelist}}" wx:key='{{index}}'>  
+              <view class='shop' bindtap='toshopinfo' data-index='{{index}}'>
+                  <image src='{{item.coverUrl}}'></image>
+                  <view class='tit'>{{item.name}}</view>
+                  <view class='loc'>{{item.distance}}m</view>
+              </view>  
+          </block>   
+        </view>
+    </view>
+</view>

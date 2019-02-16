@@ -1,0 +1,88 @@
+
+<view class='header' style="background-image:url('https://static-1257000451.cos.ap-shanghai.myqcloud.com/users/backgrounds/default.png');top:{{top}}">
+      <view class='myInfo'>
+            <image src='{{user.img}}'></image>
+            <view>
+                  <view class='mytit'>{{user.name}}<image wx:if='{{Remainingtime>0}}' src='../myimg/vip.png'></image></view>
+                  <view>已在蝉动{{allDay}}天</view>
+            </view>
+      </view>
+      <view class='revise'>  
+         <!-- <image src='../myimg/sign.png'></image> 修改资料  -->
+      </view>
+</view>
+<view class='center' style='margin:{{cmargin}}'>
+      <view class='overplus'>
+          <view>剩余会员时间</view>
+          <view style='font-size:43rpx;color:#f57a00;font-weight:600;'>{{Remainingtime}} <text style='font-size:24rpx;'>天</text></view>
+        <view class='Cbtn'>
+            <view bindtap='tobuyYear' wx:if="{{upgrade}}">升级</view>
+            <view bindtap='freeChange' wx:if="{{freezecount && !Thaw}}">冻结</view>  
+            <view wx:if="{{Thaw}}" bindtap='ThawChange'>解冻</view>   
+      </view>
+      </view>
+      
+      <view class='experience'>
+            <view class='ex-top'>
+                  <view>
+                        <image src='../myimg/ex.png'></image>蜕变值 
+                        <!-- <text style='font-weight:600;'>倔强青铜Lv.1</text> -->
+                  </view>
+                  <view style='color:#f57a00;font-size:24rpx;'>{{changeValue}}</view>
+            </view>
+            <!-- <view class='ex-anima'>
+                   <view class='ex-ancor' style="width:{{anwidth}}"></view>       
+            </view> -->
+            <view class='ex-middle'>
+                  <view>
+                        <image src='../myimg/tp.png'></image>
+                        <view>精品团课</view>
+                        <view>未购买</view>
+                  </view>
+                  <view>
+                        <image src='../myimg/tp.png'></image>
+                        <view>精品团课</view>
+                        <view>未购买</view>
+                  </view>
+                  <view>
+                        <image src='../myimg/tp.png'></image>
+                        <view>精品团课</view>
+                        <view>未购买</view>
+                  </view>
+                  <view>
+                        <image src='../myimg/tp.png'></image>
+                        <view>精品团课</view>
+                        <view>未购买</view>
+                  </view>
+            </view>
+            <view class='ex-more'>
+                  <!-- 全部特权> -->
+            </view>
+      </view>
+</view>
+<view class='footer'>
+      <navigator hover-class="none" url='../myorder/myorder'>
+            <image src='../myimg/myl1.jpg'></image>
+            我的订单
+      </navigator>
+      <navigator hover-class="none" url='../wallet/wallet'>
+            <image src='../myimg/myl2.jpg'></image>
+            脱变值
+      </navigator>
+      <navigator hover-class="none" url='../../common/soon/soon?title=优惠卡券&nav=优惠卡券'>
+            <image src='../myimg/myl3.jpg'></image>
+            优惠卡券
+      </navigator>
+       <navigator hover-class="none" url='../../common/soon/soon?title=蝉动商城&nav=蝉动商城'>
+            <image src='../myimg/myl4.jpg'></image>
+            蝉动商城
+      </navigator> 
+      <navigator hover-class="none" url='../Lockers/Lockers'>
+            <image src='../myimg/myl5.jpg'></image>
+            储藏物柜
+      </navigator>
+      <navigator url='../feedback/feedback' hover-class="none">
+            <image src='../myimg/myl6.png'></image>
+            求助反馈
+      </navigator>
+</view>

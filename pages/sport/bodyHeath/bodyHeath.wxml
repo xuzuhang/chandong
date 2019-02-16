@@ -1,0 +1,11 @@
+<!--pages/sport/bodyHeath/bodyHeath.wxml-->
+<view class='header'>
+      目前仅支持蝉动门店内的乐福系列体脂仪设备
+</view>   
+<view class='center'>
+      <view>蓝牙已开启</view>
+      <image src="../sportimg/sportlan.png"></image>
+</view>
+<view class='footer'>
+      <image src='../sportimg/sportfot.png'></image>
+</view>

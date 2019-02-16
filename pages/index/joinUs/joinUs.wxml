@@ -1,0 +1,10 @@
+<!--pages/index/joinUs/joinUs.wxml-->
+    <image src='https://static-1257000451.cos.ap-shanghai.myqcloud.com/advertisements/joinus_details.jpg' bindload="imageLoad"></image>
+<view class='footer'>
+    <navigator class='btn1'  target="miniProgram"  app-id="wxc06703b45f81510c" hover-class="none">
+              申请成为销售  
+    </navigator>
+    <navigator class='btn2'  target="miniProgram"  app-id="wxab7b1d33d21290f0" hover-class="none">
+              申请成为店长 
+    </navigator>
+</view>

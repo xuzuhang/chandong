@@ -1,0 +1,63 @@
+/* pages/my/card/card.wxss */
+.header{
+  padding: 40rpx 0 20rpx;
+  overflow:hidden;
+  border-bottom: 1rpx solid #cccccc;
+  padding-left: 12rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.header view{
+  width: 166rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 27rpx;
+  line-height: 50rpx;
+  border: 1px solid #838383;
+  color: #838383;
+  float: left;
+  margin-left: 31rpx;
+  border-radius:25rpx; 
+}
+.header image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 31rpx;
+}
+.header view.on{
+  color: #f68210;
+  border-color: #f68210;
+}
+.center{
+  width:692rpx;
+  margin: 0 auto;
+}
+.fit-list{
+  display: flex;
+  justify-content:space-between;
+  padding: 50rpx 0;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.fitness image{
+  width: 293rpx;
+  height: 193rpx;
+}
+.fitness .fit-left{
+  width: 370rpx;
+  color: #999;
+  font-size: 22rpx;
+}
+.fit-left .tit{
+  font-size:33rpx;
+  color:#000;
+  font-weight:600;
+  margin:23rpx 0 16rpx;
+}
+.fit-left .time{
+    margin-top: 10rpx;
+}
+.fit-left .money{
+  font-size: 29rpx;
+  color: #f57a00;
+  margin-left: 219rpx;
+}

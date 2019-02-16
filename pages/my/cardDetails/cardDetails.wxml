@@ -1,0 +1,42 @@
+<!--pages/my/cardDetails/cardDetails.wxml-->
+<view class='warpper'>
+      <view class='header' style=' background:url("https://static-1257000451.cos.ap-shanghai.myqcloud.com/cards/cardbg.png");'>
+              <image wx:if="{{upgrade}}" src="https://static-1257000451.cos.ap-shanghai.myqcloud.com/cards/card1upgrade.png"></image> 
+             <image wx:else src='{{cardimg}}'></image> 
+             <view style='color:#101010;font-size:33rpx;margin-bottom:10rpx;font-weight:600;'>{{tit}}</view>
+             <view>可在全世界所有蝉动门店使用</view>
+             <view>365天 x 24小时</view>
+             <view wx:if="{{upgrade}}">您可以在10天内升级哦</view>
+      </view>
+      <view class='center'>
+            <view class='application'>
+                <view class='app-left'>适用门店</view>
+                <view class='app-right' style='color:#f57a00;font-weight:normal;'>全国</view>
+            </view>
+            <view class='location' bindtap='openloc'>
+                <view class='loc-left'>
+                      <view class='loc-l-tit'>{{storename}} <text style='color:#999;font-size:22rpx;'>离你最近</text></view>
+                      <view class='loc-l-add'>
+                          {{address}}
+                      </view>
+                </view>
+                <view class='loc-right'>
+                      <image src='../../index/indeximg/location.png'></image>
+                      <view>{{distance}}m</view>
+                </view>
+            </view>
+            <view class='membership'>
+                  <view class='mem-tit'>
+                        会员权益
+                  </view>
+                  <text class='article'>
+                      {{text}}
+                  </text>
+            </view>
+      </view>
+      <view class='footer'>
+            <view class='price'><text style='font-size:23rpx;'>总价</text> ￥ {{price}}</view>
+            <navigator class='friend' url='../recommendimg/recommendimg?ids={{id}}'>推荐给朋友</navigator>
+            <view class='sure' bindtap='sures'>签署协议并购买</view>
+      </view>
+</view>

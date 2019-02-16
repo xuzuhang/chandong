@@ -1,0 +1,33 @@
+/* pages/my/autograph/autograph.wxss */
+.header{
+  text-align: center;
+  padding: 170rpx 0 70rpx;
+  color: #000;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+canvas{
+  margin: 0 auto 150rpx;
+  border: 3rpx dotted #9d9d9d;
+  background: #f0f0f0;
+  border-radius:20rpx; 
+}
+.btn{
+  display: flex;
+  justify-content: space-around;
+}
+.btn>view{
+  width: 280rpx;
+  height: 70rpx;
+  padding: 10rpx 0;
+  font-size: 30rpx;
+  font-weight: 600;
+  text-align: center;
+  border: 1rpx solid #f47c01;
+  border-radius:45rpx; 
+  color: #f47c01;
+}
+.btn view.save{
+  background:#f47c01;
+  color: #fff;
+}

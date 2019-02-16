@@ -1,0 +1,80 @@
+<!--pages/sport/Result/Result.wxml-->
+<view class='header' style='background:url(	https://static-1257000451.cos.ap-shanghai.myqcloud.com/fitness/backgrounds/default.png);background-size:contain;background-repeat:no-repeat;'>
+      <view class='Htop w695'>
+            <view class='Htop-left'>
+                  <view class='img'><image src='{{user.url}}'></image></view>
+                  <view class='Linfo'>
+                        <view style='margin:15rpx 0 10rpx;'>{{user.sex}}  |  {{user.weight}}kg  |  {{user.height}}cm  |  {{BMI.result}}</view>
+                        <view>{{user.changevalue}} 蜕变值</view>
+                  </view>
+                    <view class='modify'> </view>   <!-- 修改资料  -->
+            </view>
+            <view class='Htop-right'>
+            </view>
+      </view>
+      <view class='Hbot w695'>
+        <view class='Htit'>
+              <view class='value'>BMI指数  {{BMI.value}}</view>
+           <view class='icon' style='color:{{BMI.color}};border-left: 1rpx solid {{BMI.color}};border-top: 1rpx solid {{BMI.color}};border-bottom: 1rpx solid {{BMI.color}}'>
+                {{BMI.result}}
+                <view class='iconAngle' style='border-right:20rpx solid {{BMI.color}};'></view>
+                <view class='iconAnglew iconAngle'></view>
+          </view>
+        </view>
+        <canvas style="width:100%; height:280rpx;" canvas-id="myCanvas"></canvas>
+      </view>
+</view>
+<view class='center'>
+      <view class='circular'>
+          <view class='Bodyrate'>
+                <view class='Citit'>体脂率</view>
+                <view class='Cixtit'>标准{{Bodyrate.arrsta[1]}}%~{{Bodyrate.arrsta[2]}}%</view>
+                 <view class='icon' style='color:{{Bodyrate.color}};border-left: 1rpx solid {{Bodyrate.color}};border-top: 1rpx solid {{Bodyrate.color}};border-bottom: 1rpx solid {{Bodyrate.color}}'>
+                {{Bodyrate.result}}
+                      <view class='iconAngle' style='border-right:20rpx solid {{Bodyrate.color}};'></view>
+                      <view class='iconAnglew iconAngle'></view>
+                </view>
+                <canvas style="width:168rpx; height:168rpx;" canvas-id="Bodyrate"></canvas>
+          </view>
+          <view class='Waterrate'>
+                <view class='Citit'>水分率</view>
+                <view class='Cixtit'>标准{{Waterrate.arrsta[0]}}%~{{Waterrate.arrsta[1]}}%</view>
+                 <view class='icon' style='color:{{Waterrate.color}};border-left: 1rpx solid {{Waterrate.color}};border-top: 1rpx solid {{Waterrate.color}};border-bottom: 1rpx solid {{Waterrate.color}}'>
+                {{Waterrate.result}}
+                      <view class='iconAngle' style='border-right:20rpx solid {{Waterrate.color}};'></view>
+                      <view class='iconAnglew iconAngle'></view>
+               </view>
+               <canvas style="width:168rpx; height:168rpx;" canvas-id="Waterrate"></canvas>
+          </view>
+      </view>
+      <view class='block'>
+          <block wx:for="{{everyclass}}" wx:key="{{index}}">
+            <view class='block-list'>
+                  <view class='Btop'>
+                      <view>{{item.name}}  {{item.value}}{{item.company}}</view>
+                       <view class='icon' style='color:{{item.color}};border-left: 1rpx solid {{item.color}};border-top: 1rpx solid {{item.color}};border-bottom: 1rpx solid {{item.color}}'>
+                {{item.result}}
+                            <view class='iconAngle' style='border-right:20rpx solid {{item.color}};'></view>
+                            <view class='iconAnglew iconAngle'></view>
+                      </view>
+                  </view>
+                  <view class='Bmid'>
+                        <view>{{item.arrvalue[0]}}</view>
+                        <view>{{item.arrvalue[1]}}</view>
+                        <view>{{item.arrvalue[2]}}</view>
+                  </view>
+                  <view class='Bbot'>
+                        <view class='progress'><view style='width:{{item.text}};'></view></view>
+                        <view class='f1 ff'>
+                              <view></view>
+                              <view>{{item.arrsta[0]}}</view>
+                        </view>
+                        <view class='f2 ff'>
+                              <view></view>
+                              <view>{{item.arrsta[1]}}</view>
+                        </view>
+                  </view>
+            </view>
+          </block>
+      </view>
+</view>

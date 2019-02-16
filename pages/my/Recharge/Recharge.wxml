@@ -1,0 +1,28 @@
+<!--pages/my/Recharge/Recharge.wxml-->
+<view class='header'>
+      <view>脱变值</view>
+      <view class='Hmoney'>{{money}}</view>
+</view>
+<view class='center'>
+      <view class='Ctit'>充值金额</view>
+      <view class='Clist'>
+
+          <block wx:for="{{Recharge}}" wx:key="{{index}}">
+            <view class='sm-list {{indexs==index?"on":""}}' bindtap='listchangge' data-index='{{index}}'>
+                  <view class='lmoney'>{{item.rec}}元</view>
+                  <view>送{{item.info}}蜕变值</view>
+            </view>
+          </block>
+
+            <view class='explain'>
+                  <view>实际充值的金额可用于支付所有课程</view>
+                  <view>送您{{Recharge[indexs].info}}的蜕变值,购买蝉动商城或蝉动服务可使用</view>
+            </view>
+      </view>
+</view>
+<view class='footer'>
+<checkbox-group bindchange="checkboxChange">
+      <view class='F-top'> <checkbox color="#212121"></checkbox> 同意<text bindtap='toMsg' style=' text-decoration: underline'>《支付协议》</text></view>
+      </checkbox-group>
+      <view class='btn' bindtap='toPay'>支付</view>
+</view>

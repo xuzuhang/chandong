@@ -1,0 +1,132 @@
+<!--pages/sport/sport.wxml-->
+<view class='wrapper' style=' background:{{Planstart.background}};overflow: {{Planstart.overflow}};'>
+      <view class='header'>
+            <view class='Htop w695'>
+                <view class='head'><image src='{{imgpic}}'></image></view>
+                <view class='hotvalue'>
+                     <view class='Hlist'>
+                        {{BMI.thisweek.text}}
+                        <view>上周BMI {{BMI.lastweek.text}}</view>
+                         <image wx:if='{{BMI.lastweek.value<BMI.thisweek.value}}' class='up' src='../sportimg/up.png'></image>
+                        <image wx:elif='{{BMI.lastweek.value>BMI.thisweek.value}}' class='down' src='../sportimg/down.png'></image> 
+                  </view>
+                  <view class='Hlist'>
+                         {{sport.today.text}}h 
+                        <view>今日运动时长</view>
+                        <image wx:if='{{sport.today.value>sport.prvday.value}}' class='up' src='../sportimg/up.png'></image>
+                        <image wx:elif="{{sport.today.value<sport.prvday.value}}" class='down' src='../sportimg/down.png'></image> 
+                  </view>
+                  <view class='Hlist'>
+                        {{alltime}}
+                        <view>累计运动小时数</view>
+                  </view>
+                </view>
+            </view>
+      </view>
+
+
+      <view class='center w695'>
+            <view class='sptimes'>
+                   <picker bindchange="bindPickerChange" value="{{pici}}" range="{{sptimeArray}}">
+                      {{sptimeArray[pici]}}  ▼
+                    </picker>
+                    <view class='week'>
+                        <block wx:for="{{weekArray}}" wx:key="{{index}}">
+                              <view class='weekList {{day==index && pici==0?"on":""}}'>
+                                    <view class='progr'><view style='height:{{item.pro}};'></view></view>
+                                    {{item.day}}
+                                    <view style='color:#9a9a9a;font-size:20rpx;'>{{item.date}}</view>
+                              </view>
+                          </block>
+                    </view>
+            </view>
+
+            <view class='Ctit'>
+                  <navigator url="../testPhysical/testPhysical" hover-class="none">
+                            <image src='../sportimg/sp1.png'></image>
+                            <view>智能体测</view>
+                  </navigator>
+                  <navigator hover-class="none" url='../../common/soon/soon?title=智能跑步&nav=智能跑步'>
+                            <image src='../sportimg/sp2.png'></image>
+                            <view>智能跑步</view>
+                  </navigator>
+                  <view bindtap='makePlan'>
+                            <image src='../sportimg/sp3.png'></image>
+                            <view>定制计划</view>
+                  </view>
+                  <navigator hover-class="none" url='../../common/soon/soon?title=私教课程&nav=私教课程'>
+                            <image src='../sportimg/sp4.png'></image>
+                            <view>私教课程</view>
+                  </navigator>
+                  <navigator hover-class="none" url='../../common/soon/soon?title=器械指南&nav=器械指南'>
+                            <image src='../sportimg/sp5.png'></image>
+                            <view>器械指南</view>
+                  </navigator>
+            </view>
+      </view>
+      <view class='footer w695'>
+            <view class='Ftitle'>
+                  我的计划
+            </view>
+            <view class='Flist'>
+              <block wx:for="{{listweek}}" wx:key="{{index}}">
+                <view class='list-week {{indexweek==index?"on":""}}' bindtap='tabweeks' data-indexweek='{{index}}'>
+                      {{item.week}}
+                      <view style='font-size:18rpx;font-weight:normal;'>{{item.date}}</view>
+                </view>
+              </block>
+            </view>
+            <view class='plan'>
+                <block wx:for="{{planlist}}" wx:key="{{index}}">
+                  <view class='plan-list' style='color:{{item.color}}'>
+                  <text class='circular'></text><text style='margin:0 41rpx 0 24rpx;font-size:23rpx;font-weight:normal;'>{{item.time}}</text>  {{item.purpose}}-{{item.name}}-{{item.intensity}}
+                      <view style='margin:10rpx 0 0 160rpx;font-weight:normal;font-size:24rpx;'>程序：{{item.intensity}}  |  时间：{{item.duration}}分钟 </view>
+                  </view>
+                  </block>
+            </view>
+      </view>
+      <view class='makeplan' style='height:830rpx;width:695rpx;overflow:hidden;transform:{{Planstart.sc}}'>
+            <picker bindchange="pickerProject" value="{{plansArray[0].index}}" range="{{plansArray[0].array}}">
+                <view class='picker'>
+                    <view class='picktit'>计划项目</view> 
+                  <view class='pickma'>{{plansArray[0].array[plansArray[0].index]}} <image src='../sportimg/dayu.png'></image></view>
+                </view>
+            </picker>
+            <picker bindchange="pickerProjectMain" value="{{plansArray[1].index}}" range="{{plansArray[1].array}}">
+                <view class='picker'>
+                    <view class='picktit'>项目内容</view> 
+                  <view class='pickma'>{{plansArray[1].array[plansArray[1].index]}} <image src='../sportimg/dayu.png'></image></view>
+                </view>
+            </picker>
+            <picker bindchange="pickerStrength" value="{{plansArray[2].index}}" range="{{plansArray[2].array}}">
+                <view class='picker'>
+                    <view class='picktit'>训练强度</view> 
+                  <view class='pickma'>{{plansArray[2].array[plansArray[2].index]}} <image src='../sportimg/dayu.png'></image></view>
+                </view>
+            </picker>
+            <view class='middle'></view>
+            <picker bindchange="pickerDate" value="{{plansArray[3].index}}" range="{{plansArray[3].array}}">
+                <view class='picker'>
+                    <view class='picktit'>计划日期</view> 
+                  <view class='pickma'>{{plansArray[3].array[plansArray[3].index]}} <image src='../sportimg/dayu.png'></image></view>
+                </view>
+            </picker>
+            <picker mode="time" bindchange="pickertime" value="{{plansArray[4].time}}" >
+                <view class='picker'>
+                    <view class='picktit'>计划时间</view> 
+                  <view class='pickma'>{{plansArray[4].time}} <image src='../sportimg/dayu.png'></image></view>
+                </view>
+            </picker>
+            
+            <picker bindchange="pickerTimeLength" value="{{plansArray[5].index}}" range="{{plansArray[5].array}}">
+                <view class='picker'>
+                    <view class='picktit'>计划时长</view> 
+                  <view class='pickma'>{{plansArray[5].array[plansArray[5].index]}} <image src='../sportimg/dayu.png'></image></view>
+                </view>
+            </picker>
+            <view class='Pbtn'>
+                <view class='remove' bindtap='remove'>取消</view>
+                <view class='Preservation' bindtap='Preservation'>保存</view>
+            </view>
+      </view>
+</view>

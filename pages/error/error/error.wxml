@@ -1,0 +1,6 @@
+<view class="header">
+    <icon type="warn" size="100"/>
+    <view class='tit' wx:if="{{types=='time'}}">请求超时了</view>
+    <view class='tit' wx:else>服务器发生错误</view>
+    <button bindtap='toenter'>进入加载页</button>
+</view>

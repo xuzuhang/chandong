@@ -1,0 +1,20 @@
+<!--pages/login6/login6.wxml-->
+<view class='container'>
+    <view class='center'>
+        <view class='main'>
+            <view class='title'>你的运动目的是?</view>
+            <view class='choose'>
+                <block wx:for='{{infoArray}}' wx:key="{{index}}">
+                  <view class='tab {{inx==index?"on":""}}' bindtap='change' data-i='{{index}}'>
+                        <view class='tit'>{{item.title}}</view>
+                        <view class='info'>{{item.info}}</view>
+                  </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='btn'>
+          <button plain='true' style='color:#f79733;border-color:#f79733;' bindtap='last'>上一步</button>
+          <button style='color:#fff;background:#f79733;' bindtap='next'>下一步</button>
+</view>

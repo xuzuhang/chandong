@@ -1,0 +1,78 @@
+/* pages/state/Release/Release.wxss */
+.header{
+  margin: 44rpx auto 0;
+  width: 695rpx;
+  /* border-bottom: 1rpx solid #e6e6e6; */
+}
+textarea{
+  height: 250rpx;
+  width: 100%;
+  font-size: 30rpx;
+}
+.words{
+  font-size: 24rpx;
+  margin-bottom: 40rpx;
+  text-align: right;
+  color: #b6b6b6;
+  margin-bottom: 30rpx;
+}
+.header .photo{
+  display: flex;
+  margin-bottom: 42rpx;
+}
+.header .photo>view{
+    width: 120rpx;
+    height: 120rpx;
+    margin-left: 42rpx;
+    float: left;
+    position:relative;
+}
+.header .photo>view icon{
+    position: absolute;
+    top: -7px;
+    left:100rpx;
+}
+.header .photo>view image{
+  width: 100%;
+  height: 100%;
+  border-radius:10rpx; 
+}
+.video video{
+  width: 180rpx;
+  height: 320rpx;
+  margin: 0  0  30rpx 20rpx;
+}
+.center{
+    width:695rpx;
+    margin: 0 auto;
+     padding-bottom: 150rpx; 
+}
+.center>view{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e6e6e6;
+  padding: 33rpx 0;
+  font-size: 30rpx;
+  color: #000;
+}
+.center picker{
+  color: #fb7917;
+  font-size: 28rpx;
+}
+.footer{
+  position:fixed;
+  bottom: 0;
+  height: 150rpx;
+  width: 100%;
+}
+.footer .btn{
+   width: 550rpx;
+   margin: 0 auto;
+  height: 80rpx;
+   background: #f47c01;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 29rpx;
+  border-radius:40rpx; 
+}

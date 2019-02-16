@@ -1,0 +1,62 @@
+/* pages/login6/login6.wxss */
+page{
+  color: #35364b;
+}
+.center{
+  padding-top: 32rpx;
+  width: 650rpx;
+  margin:85rpx  auto 0;
+  border-radius:8rpx; 
+}
+
+.main{
+  margin-top: 140rpx;
+  width: 550rpx;
+  margin: 0 auto;
+  padding-bottom: 70rpx;
+}
+.center .title{
+  text-align: center;
+  font-weight: 600;
+}
+.choose{
+  margin-top: 70rpx;
+}
+.tab{
+  text-align: center;
+  width: 506rpx;
+  height: 110rpx;
+  color: #f47c01;
+  border: #f47c01 solid 1rpx;
+  border-bottom-left-radius: 55rpx;
+  border-bottom-right-radius: 55rpx;
+  border-top-left-radius: 55rpx;
+  border-top-right-radius: 55rpx;
+  margin:0 auto 56rpx;
+}
+.on{
+  color: #fff;
+  background: #f47c01;
+}
+.tit{
+    font-size: 28rpx;
+    font-weight: 600;
+    line-height: 68rpx;
+}
+.info{
+    font-size: 23rpx;
+}
+.btn{
+  margin-top:35rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.btn button{
+  width: 278rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  border-bottom-left-radius: 39rpx;
+  border-bottom-right-radius: 39rpx;
+  border-top-left-radius: 39rpx;
+  border-top-right-radius: 39rpx;
+}

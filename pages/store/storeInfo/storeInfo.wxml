@@ -1,0 +1,49 @@
+<!--pages/store/storeInfo/storeInfo.wxml-->
+<view class='container'>
+      <view class='header'>
+            <view class='tab'>
+                  <view class='storetit {{index==1?"on":""}}' bindtap='tab' data-index='1'>门店信息</view>
+                  <!-- <view class='studytit {{index==2?"on":""}}' bindtap='tab' data-index='2'>器械学习</view> -->
+            </view>
+      </view>
+      <view class='center'>
+            <view wx:if='{{index==1}}' class='storeinfo'>
+                  <view class='top'>
+                       <image src='{{storeImg}}'></image>
+                       <view class='main'>
+                            <view style='font-size:33rpx;font-weight:600; color:#000;'>{{storeName}}</view>
+                            <view>操房数量 {{storeClassrooms}}</view>
+                            <view>门店面积 {{storetotalArea}}㎡ <text wx:if='{{storepersonalArea}}'>| 私教面积 {{storepersonalArea}}㎡</text></view>
+                            <button bindtap='tocard'>购买会员卡</button>
+                       </view>
+                  </view>
+                  <view class='middle' bindtap='location'>
+                      <view class='loctit'>
+                            <view style='height:63rpx;'>{{storeAddress}}</view>
+                            <view style='color:#ea9964;'>找不到门店？</view>
+                      </view>
+                      <view class='loc'>
+                            <image src='../../index/indeximg/location.png'></image>
+                            <view>{{storedistance}}m</view>
+                      </view>
+                  </view>
+            </view>
+            <!-- <view wx:else class='apparatus'>  
+                  <view class='aps'>
+                        <block wx:for="{{apsArray}}" wx:key="{{index}}">
+                        <view class='apsinfo' bindtap='tovideo' data-index='{{item.id}}'>
+                          <image src='{{item.logoUrl}}'></image>
+                          <view class='aps-info-main'>
+                              <view class='aps-mian-top'>
+                                  <view style='font-size:27rpx;color:#040404;font-weight:600;margin-top:10rpx;'>{{item.name}}</view>
+                                  <view style='font-size:22rpx;margin:15rpx 0 10rpx;'>{{item.tags}}</view> 
+                                  <view style='font-size:24rpx;'>{{item.profile}}</view> 
+                              </view>
+                              <view class='video'><view class='triangle'></view></view>
+                          </view>
+                        </view>
+                        </block>
+                  </view>
+            </view> -->
+      </view>
+</view>

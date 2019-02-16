@@ -1,0 +1,5 @@
+/**app.wxss**/
+image{
+  width: 0rpx;
+  height: 0rpx;
+}

@@ -1,0 +1,30 @@
+<!--pages/state/state.wxml-->
+<view class='wrapper' bindtap='remove'>
+      <view class='header'>
+          <view class='Htit'>
+              <!-- <view class='{{index==1?"on":""}}' bindtap='tab' data-index='1'>运动时刻</view>
+              <view class='{{index==2?"on":""}}' bindtap='tab' data-index='2'>动态</view> -->
+              <!-- <view class='{{index==3?"on":""}}' bindtap='tab' data-index='3'>热门</view> -->
+          </view>
+          <image src='../stateimg/photo.png' catchtap='photo'></image>
+      </view>
+      <view class='center'>
+      <block wx:for="{{video.array}}" wx:key="{{index}}">
+        <view class='Cwrap' bindtap='toinfo' data-ind='{{index}}'>
+              <view class='Ctop'>
+                  <view class='Cinfo'>
+                        <image src='{{item.avatarUrl}}'></image>
+                        <text>{{item.nickName}}</text>
+                  </view>
+                  <view class='Ctime'>{{item.times}}</view>
+              </view>
+              <view class='Ctit'>{{item.title}}</view>
+              <view class='Cimg' style='background-image:url({{item.coverUrl}});background-repeat: no-repeat;background-size: cover;'>
+                    <!-- <image data-in='{{index}}' style='height:{{item.height}};width:{{item.width}};' src='{{item.coverUrl}}'  ></image> -->
+              </view>
+        </view>  
+      </block>
+
+      </view>      
+</view>
+

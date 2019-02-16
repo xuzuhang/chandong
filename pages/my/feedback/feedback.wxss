@@ -1,0 +1,104 @@
+/* pages/my/feedback/feedback.wxss */
+.w695{
+  width:695rpx;
+  margin: 0 auto;
+}
+.header{
+  padding:30rpx 0 25rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.Htitle{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: #626262;
+  margin-bottom: 34rpx;
+}
+.tit{
+  font-size: 32rpx;
+  color: #050505;
+  font-weight: 600;
+}
+.Htab{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 595rpx;
+  margin: 0 auto;
+}
+.tab{
+  width:122rpx;
+  height: 54rpx;
+  line-height: 56rpx;
+  color: #ff7f11;
+  border: 1rpx solid #ff7f11;
+  text-align: center;
+  border-radius:27rpx; 
+  font-size: 25rpx;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+}
+.tab.on{
+  background: #f57b00;
+  color: #fff;
+}
+.center textarea{
+  width: 630rpx;
+  height: 300rpx;
+  padding: 30rpx;
+  border: 4rpx dotted #a0a0a0;
+  border-radius:20rpx;
+  background:#f0f0f0;
+  font-size:28rpx; 
+  line-height: 42rpx;
+  color: #969696;
+  margin-bottom: 45rpx;
+}
+.csm image{
+  width: 50rpx;
+  height: 54rpx;
+  margin-top: 33rpx;
+}
+.csm{
+  float: left;
+  border-radius:10rpx; 
+  width: 120rpx;
+  height: 120rpx;
+  background: #ccc;
+  text-align: center;
+  margin-right: 38rpx;
+}
+.footer{
+  text-align: center;
+}
+.footer .btn{
+  width:552rpx;
+  height: 80rpx;
+  border-radius:40rpx; 
+  margin:0 auto 32rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background: #f57b00;
+  line-height: 80rpx; 
+}
+ .photo{
+  display: flex;
+  margin: 50rpx 0 55rpx;
+}
+ .photo>view{
+    width: 120rpx;
+    height: 120rpx;
+    margin-left: 42rpx;
+    float: left;
+    position:relative;
+}
+ .photo>view icon{
+    position: absolute;
+    top: -7px;
+    left:100rpx;
+}
+.Pimg image{
+  width:100%;
+  height: 100%;
+}
